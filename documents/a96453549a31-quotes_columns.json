@@ -1,0 +1,23 @@
+{
+  "note": "ERP 86 報價匯出的欄位對照。把匯出檔放在 analysis/inputs/quotes_export.csv 或 .xlsx，再把右邊填成匯出的實際欄名。空字串 = 匯出沒有這欄。",
+  "file": "quotes_export.csv",
+  "sheet": "",
+  "columns": {
+    "quote_no": "",
+    "quote_date": "",
+    "salesperson": "",
+    "customer": "",
+    "end_user": "",
+    "status": "",
+    "total_value": "",
+    "currency": "",
+    "so_no": "",
+    "line_sku": "",
+    "line_qty": "",
+    "line_unit_price": ""
+  },
+  "status_won_values": [],
+  "status_lost_values": [],
+  "date_format": "",
+  "min_quotes_for_ranking": 5
+}

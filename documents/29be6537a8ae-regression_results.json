@@ -1,0 +1,1376 @@
+{
+  "source": "Weekly Report-09182026.xlsx",
+  "sample": "Total overview / MS Monthly SOR / Others-Monthly SOR columns B:N",
+  "months": [
+    "2025-09-23",
+    "2025-10-23",
+    "2025-11-23",
+    "2025-12-23",
+    "2026-01-23",
+    "2026-02-23",
+    "2026-03-23",
+    "2026-04-23",
+    "2026-05-23",
+    "2026-06-23",
+    "2026-07-23",
+    "2026-08-23",
+    "2026-09-23"
+  ],
+  "cells": {
+    "Microsoft": "MS Monthly SOR!B8:N8",
+    "Microsoft_SFT_sales": "MS Monthly SOR!B6:N6",
+    "Microsoft_SFT_qty": "MS Monthly SOR!B3:N3",
+    "TOTAL": "Total overview!B8:N8",
+    "Weka": "Others-Monthly SOR!B21:N21",
+    "SUSE": "Others-Monthly SOR!B22:N22",
+    "Canonical": "Others-Monthly SOR!B23:N23",
+    "Red Hat": "Others-Monthly SOR!B24:N24",
+    "CTERA": "Others-Monthly SOR!B25:N25",
+    "DDN": "Others-Monthly SOR!B26:N26",
+    "OSNexus": "Others-Monthly SOR!B27:N27",
+    "Scality": "Others-Monthly SOR!B28:N28",
+    "Quantum": "Others-Monthly SOR!B29:N29",
+    "Qumulo": "Others-Monthly SOR!B30:N30",
+    "Pica8": "Others-Monthly SOR!B31:N31",
+    "GRAID": "Others-Monthly SOR!B32:N32",
+    "Vast": "Others-Monthly SOR!B33:N33",
+    "Hammerspace": "Others-Monthly SOR!B34:N34",
+    "SteelDome": "Others-Monthly SOR!B35:N35",
+    "Monitize360": "Others-Monthly SOR!B36:N36",
+    "Xinnor": "Others-Monthly SOR!B37:N37"
+  },
+  "not_estimated": [
+    "QO hit rate",
+    "gross margin"
+  ],
+  "linear": {
+    "Microsoft": {
+      "n": 13,
+      "nonzero_months": 13,
+      "intercept": 501981.3296703296,
+      "slope_per_month": 11966.06043956044,
+      "r": 0.3288738426079326,
+      "r2": 0.10815800435170723,
+      "p_slope": 0.27256441553917804,
+      "slope_se": 10360.231890803458,
+      "slope_ci95": [
+        -10836.656207206104,
+        34768.77708632698
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Weka": {
+      "n": 13,
+      "nonzero_months": 10,
+      "intercept": 204569.24703296702,
+      "slope_per_month": 30934.204725274725,
+      "r": 0.1903061861735486,
+      "r2": 0.036216444495921346,
+      "p_slope": 0.5334459212683448,
+      "slope_se": 48114.8861943095,
+      "slope_ci95": [
+        -74965.94576789853,
+        136834.35521844798
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "SUSE": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "Canonical": {
+      "n": 13,
+      "nonzero_months": 6,
+      "intercept": 11521.692307692309,
+      "slope_per_month": 1635.8461538461538,
+      "r": 0.17490869170523293,
+      "r2": 0.03059305043403622,
+      "p_slope": 0.5676375738174444,
+      "slope_se": 2776.436772168628,
+      "slope_ci95": [
+        -4475.049979629726,
+        7746.742287322033
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Red Hat": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "CTERA": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "DDN": {
+      "n": 13,
+      "nonzero_months": 5,
+      "intercept": 992544.7348351649,
+      "slope_per_month": -51445.48901098901,
+      "r": -0.11977862951490893,
+      "r2": 0.014346920088469814,
+      "p_slope": 0.6967133418108521,
+      "slope_se": 128568.22826398305,
+      "slope_ci95": [
+        -334422.2514792901,
+        231531.27345731203
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "OSNexus": {
+      "n": 13,
+      "nonzero_months": 6,
+      "intercept": 25390.042197802195,
+      "slope_per_month": -570.7716483516482,
+      "r": -0.05753839945958905,
+      "r2": 0.0033106674123712376,
+      "p_slope": 0.8518905546041821,
+      "slope_se": 2985.9888244115646,
+      "slope_ci95": [
+        -7142.888739080979,
+        6001.345442377683
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Scality": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "Quantum": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "Qumulo": {
+      "n": 13,
+      "nonzero_months": 4,
+      "intercept": 19994.894945054948,
+      "slope_per_month": 1935.2687912087908,
+      "r": 0.10791370619864639,
+      "r2": 0.011645367985527772,
+      "p_slope": 0.725655298485348,
+      "slope_se": 5375.57274403184,
+      "slope_ci95": [
+        -9896.287045398374,
+        13766.824627815957
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Pica8": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 2
+    },
+    "GRAID": {
+      "n": 13,
+      "nonzero_months": 12,
+      "intercept": 210104.43956043955,
+      "slope_per_month": -20799.56043956044,
+      "r": -0.698481963724808,
+      "r2": 0.48787705364886397,
+      "p_slope": 0.007913794462604831,
+      "slope_se": 6425.24564567549,
+      "slope_ci95": [
+        -34941.43075563561,
+        -6657.6901234852685
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Vast": {
+      "n": 13,
+      "nonzero_months": 7,
+      "intercept": 736711.9010989014,
+      "slope_per_month": 209229.36263736262,
+      "r": 0.19679843351314535,
+      "r2": 0.038729623433227896,
+      "p_slope": 0.5193026823796292,
+      "slope_se": 314287.7340223455,
+      "slope_ci95": [
+        -482513.2759446478,
+        900972.001219373
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "Hammerspace": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 3
+    },
+    "SteelDome": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 0
+    },
+    "Monitize360": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 1
+    },
+    "Xinnor": {
+      "skipped": true,
+      "reason": "非零月少於 4",
+      "nonzero_months": 3
+    },
+    "total_excluding_Vast_and_DDN": {
+      "n": 13,
+      "nonzero_months": 13,
+      "intercept": 984727.287912088,
+      "slope_per_month": 64455.50637362637,
+      "r": 0.22736875639184054,
+      "r2": 0.051696551383172126,
+      "p_slope": 0.4550294755153426,
+      "slope_se": 83235.1105411317,
+      "slope_ci95": [
+        -118743.7367259916,
+        247654.74947324436
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    },
+    "TOTAL": {
+      "n": 13,
+      "nonzero_months": 13,
+      "intercept": 2713983.9238461535,
+      "slope_per_month": 222239.37999999998,
+      "r": 0.19402741711330915,
+      "r2": 0.03764663859166205,
+      "p_slope": 0.5253189506135095,
+      "slope_se": 338788.6525993372,
+      "slope_ci95": [
+        -523429.41677858273,
+        967908.1767785827
+      ],
+      "note": "描述這個 13 個月窗口，不是命中率，也不是毛利。"
+    }
+  },
+  "plane": {
+    "Microsoft_SFT": {
+      "y": "MS Monthly SOR!B6:N6",
+      "qty": "MS Monthly SOR!B3:N3",
+      "n": 13,
+      "r2": 0.7562637899244847,
+      "coefficients": {
+        "intercept": {
+          "coef": 191771.97132306983,
+          "se": 72044.16292840416,
+          "p": 0.023822823134263583,
+          "ci95": [
+            31247.572843463306,
+            352296.3698026764
+          ]
+        },
+        "t": {
+          "coef": 11185.614842832405,
+          "se": 5677.211919768473,
+          "p": 0.07711041485059142,
+          "ci95": [
+            -1464.0016065633117,
+            23835.23129222812
+          ]
+        },
+        "qty": {
+          "coef": 189.5661352133597,
+          "se": 36.80493476358217,
+          "p": 0.00043109335814453905,
+          "ci95": [
+            107.55963012180203,
+            271.5726403049174
+          ]
+        }
+      },
+      "note": "兩個自變數的平面。不是命中率，也不是毛利。"
+    },
+    "Weka": {
+      "y": "Others-Monthly SOR!B21:N21",
+      "qty": "Others-Monthly SOR!B3:N3",
+      "n": 13,
+      "r2": 0.7043188362768484,
+      "coefficients": {
+        "intercept": {
+          "coef": -34646.86968988564,
+          "se": 203949.95815867063,
+          "p": 0.8684926492073465,
+          "ci95": [
+            -489075.6953241946,
+            419781.95594442333
+          ]
+        },
+        "t": {
+          "coef": 30624.938501726927,
+          "se": 27951.109749478805,
+          "p": 0.2989126824888231,
+          "ci95": [
+            -31654.015087219126,
+            92903.89209067298
+          ]
+        },
+        "qty": {
+          "coef": 27.98928527391005,
+          "se": 5.888194194596716,
+          "p": 0.0007761718003493346,
+          "ci95": [
+            14.86957102088908,
+            41.108999526931015
+          ]
+        }
+      },
+      "note": "兩個自變數的平面。不是命中率，也不是毛利。"
+    }
+  },
+  "regularity": {
+    "Microsoft": {
+      "zero_month_share": 0.0,
+      "cv_sample_including_zeros": 0.24695809755904272,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.18962633822734415,
+        "r": -0.18349563241621067,
+        "p": 0.5680970901117501
+      },
+      "sum_dollars": 7459110.0
+    },
+    "Weka": {
+      "zero_month_share": 0.23076923076923078,
+      "cv_sample_including_zeros": 1.6224535251884782,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": 0.11987777417637695,
+        "r": 0.11891638427776133,
+        "p": 0.7128022377298605
+      },
+      "sum_dollars": 5072268.18
+    },
+    "SUSE": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 3.2179175859844618,
+      "ar1": null,
+      "sum_dollars": 17691.0
+    },
+    "Canonical": {
+      "zero_month_share": 0.5384615384615384,
+      "cv_sample_including_zeros": 1.7070548537763417,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.05594061206206404,
+        "r": -0.0561499457980764,
+        "p": 0.8623977281969636
+      },
+      "sum_dollars": 277378.0
+    },
+    "Red Hat": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 3.0466510655350643,
+      "ar1": null,
+      "sum_dollars": 7717.7
+    },
+    "CTERA": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 3.2579576004015784,
+      "ar1": null,
+      "sum_dollars": 272400.0
+    },
+    "DDN": {
+      "zero_month_share": 0.6153846153846154,
+      "cv_sample_including_zeros": 2.4458979606077396,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.04330765952186823,
+        "r": -0.043289752162623915,
+        "p": 0.893732368745105
+      },
+      "sum_dollars": 8890333.41
+    },
+    "OSNexus": {
+      "zero_month_share": 0.5384615384615384,
+      "cv_sample_including_zeros": 1.7587751741721962,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.35670454110907424,
+        "r": -0.35250161554797366,
+        "p": 0.26109275554163175
+      },
+      "sum_dollars": 285550.36
+    },
+    "Scality": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 2.4705465196562817,
+      "ar1": null,
+      "sum_dollars": 162156.28
+    },
+    "Quantum": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 3.0314498565031016,
+      "ar1": null,
+      "sum_dollars": 343532.92000000004
+    },
+    "Qumulo": {
+      "zero_month_share": 0.6923076923076923,
+      "cv_sample_including_zeros": 2.2096996350822127,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.23130641993248785,
+        "r": -0.2330152048127522,
+        "p": 0.4661011732519057
+      },
+      "sum_dollars": 410884.6
+    },
+    "Pica8": {
+      "zero_month_share": 0.8461538461538461,
+      "cv_sample_including_zeros": 2.5221850355808635,
+      "ar1": null,
+      "sum_dollars": 5258.0
+    },
+    "GRAID": {
+      "zero_month_share": 0.07692307692307693,
+      "cv_sample_including_zeros": 1.3594366395663797,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": 0.08024671209996398,
+        "r": 0.1027085214708733,
+        "p": 0.7507623207488263
+      },
+      "sum_dollars": 1108992.0
+    },
+    "Vast": {
+      "zero_month_share": 0.46153846153846156,
+      "cv_sample_including_zeros": 2.0784401811056976,
+      "ar1": {
+        "n_pairs": 12,
+        "slope": -0.03332333649290761,
+        "r": -0.032709698369682495,
+        "p": 0.9196181997368309
+      },
+      "sum_dollars": 25897145.0
+    },
+    "Hammerspace": {
+      "zero_month_share": 0.7692307692307693,
+      "cv_sample_including_zeros": 3.3831030408514473,
+      "ar1": null,
+      "sum_dollars": 2296311.2
+    },
+    "SteelDome": {
+      "zero_month_share": 1.0,
+      "cv_sample_including_zeros": null,
+      "ar1": null,
+      "sum_dollars": 0.0
+    },
+    "Monitize360": {
+      "zero_month_share": 0.9230769230769231,
+      "cv_sample_including_zeros": 3.605551275463989,
+      "ar1": null,
+      "sum_dollars": 52346.0
+    },
+    "Xinnor": {
+      "zero_month_share": 0.7692307692307693,
+      "cv_sample_including_zeros": 2.0907395578006347,
+      "ar1": null,
+      "sum_dollars": 57388.0
+    }
+  },
+  "ridge": {
+    "identity_max_abs_gap": 1.862645149230957e-09,
+    "standardization": "欄位減均值再除以樣本標準差；y 減均值。係數不是美元。",
+    "dropped_all_zero_columns": [
+      "SteelDome"
+    ],
+    "death_rule": "係數是美元每 1 個標準差。某家在該 λ 的絕對係數低於當下最大絕對係數的 5%，記為退場。不是 p 值。",
+    "warning": "y 是各 vendor 金額之和。Ridge 不解釋誰造成總額，只看懲罰加大後誰的波動還在。全零的欄先拿掉，否則矩陣是奇異的。",
+    "path": [
+      {
+        "lambda": 0.0,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 3790942.1542378496
+          },
+          {
+            "vendor": "DDN",
+            "coef": 948211.7727536368
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 809004.9944915469
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 748584.0721776085
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 582995.7133434236
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": 500501.8304532703
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": 449400.4155294466
+          },
+          {
+            "vendor": "Weka",
+            "coef": 416142.7546755537
+          },
+          {
+            "vendor": "Scality",
+            "coef": -276608.9343914217
+          },
+          {
+            "vendor": "Canonical",
+            "coef": -271234.3660017768
+          },
+          {
+            "vendor": "Pica8",
+            "coef": 242568.14225393994
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": 240333.36138042193
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 231707.89005684166
+          },
+          {
+            "vendor": "GRAID",
+            "coef": -155717.82515099802
+          },
+          {
+            "vendor": "Quantum",
+            "coef": -30636.90489724556
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": -22585.483277741976
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": -8214.137619428524
+          }
+        ]
+      },
+      {
+        "lambda": 0.1,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 3712546.467247891
+          },
+          {
+            "vendor": "DDN",
+            "coef": 885746.6633731432
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 865053.2280364013
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 715708.8018068317
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 560898.9789044644
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": 477460.2889112634
+          },
+          {
+            "vendor": "Weka",
+            "coef": 450107.3558653977
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": 356587.32174960617
+          },
+          {
+            "vendor": "Scality",
+            "coef": -240789.77177867628
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": 237693.92640900635
+          },
+          {
+            "vendor": "Pica8",
+            "coef": 221437.180819927
+          },
+          {
+            "vendor": "Canonical",
+            "coef": -167870.61604544157
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 163234.18088493912
+          },
+          {
+            "vendor": "GRAID",
+            "coef": -145859.9339927278
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": -48448.77538887763
+          },
+          {
+            "vendor": "Quantum",
+            "coef": -25718.09752193411
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": -9420.889626513048
+          }
+        ]
+      },
+      {
+        "lambda": 1.0,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 3148914.5420989897
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 1080284.202665316
+          },
+          {
+            "vendor": "DDN",
+            "coef": 801894.9977871277
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 635652.8827332951
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 523529.8481673907
+          },
+          {
+            "vendor": "Weka",
+            "coef": 370424.86369421124
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": 190889.53965863894
+          },
+          {
+            "vendor": "Scality",
+            "coef": -186189.2096891274
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": 167690.95986004977
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": 132071.5378958458
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 130649.14973326182
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": -65572.69171268337
+          },
+          {
+            "vendor": "GRAID",
+            "coef": -57347.73180224703
+          },
+          {
+            "vendor": "Canonical",
+            "coef": 55560.695759029535
+          },
+          {
+            "vendor": "Quantum",
+            "coef": 13661.471935915453
+          },
+          {
+            "vendor": "Pica8",
+            "coef": 12350.339565619613
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": 11571.50532573526
+          }
+        ]
+      },
+      {
+        "lambda": 10.0,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 1691088.6941187158
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 1068690.560463733
+          },
+          {
+            "vendor": "DDN",
+            "coef": 548159.8878490723
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 406069.41135592514
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 382281.34112451685
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": -296568.4086407175
+          },
+          {
+            "vendor": "Canonical",
+            "coef": 191054.40765331374
+          },
+          {
+            "vendor": "Pica8",
+            "coef": -186253.69597172414
+          },
+          {
+            "vendor": "Weka",
+            "coef": 157349.61051029817
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 118207.71339498539
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": 87119.4652051651
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": -74739.61123590672
+          },
+          {
+            "vendor": "Quantum",
+            "coef": -58237.120454038435
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": -30836.41169788833
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": 25947.62806312692
+          },
+          {
+            "vendor": "Scality",
+            "coef": 24526.209172080795
+          },
+          {
+            "vendor": "GRAID",
+            "coef": 2974.2967991436985
+          }
+        ]
+      },
+      {
+        "lambda": 100.0,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 392671.05711432407
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 305526.5263557691
+          },
+          {
+            "vendor": "DDN",
+            "coef": 163229.33050460138
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 126963.3803882494
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 125971.49231009961
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": -115326.48578822077
+          },
+          {
+            "vendor": "Canonical",
+            "coef": 78207.65089887689
+          },
+          {
+            "vendor": "Quantum",
+            "coef": -66451.01876674217
+          },
+          {
+            "vendor": "Scality",
+            "coef": 59352.591485969904
+          },
+          {
+            "vendor": "Pica8",
+            "coef": -56954.186533427885
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": 54747.595562053946
+          },
+          {
+            "vendor": "Weka",
+            "coef": 37066.1671699554
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 36004.8596087257
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": -35875.170839776474
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": -33886.59830540766
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": 31811.306214976325
+          },
+          {
+            "vendor": "GRAID",
+            "coef": -840.356906265336
+          }
+        ]
+      },
+      {
+        "lambda": 1000.0,
+        "coefficients_by_abs": [
+          {
+            "vendor": "Vast",
+            "coef": 45941.821964192146
+          },
+          {
+            "vendor": "OSNexus",
+            "coef": 36857.06733114811
+          },
+          {
+            "vendor": "DDN",
+            "coef": 21592.782771932438
+          },
+          {
+            "vendor": "CTERA",
+            "coef": 17475.895855377046
+          },
+          {
+            "vendor": "SUSE",
+            "coef": 17179.094804522065
+          },
+          {
+            "vendor": "Microsoft",
+            "coef": -13902.370879942098
+          },
+          {
+            "vendor": "Canonical",
+            "coef": 11273.80760625525
+          },
+          {
+            "vendor": "Quantum",
+            "coef": -9703.103071603606
+          },
+          {
+            "vendor": "Scality",
+            "coef": 9697.493916948188
+          },
+          {
+            "vendor": "Xinnor",
+            "coef": 8681.81185038168
+          },
+          {
+            "vendor": "Pica8",
+            "coef": -6939.284185009676
+          },
+          {
+            "vendor": "Weka",
+            "coef": 5094.9325467589215
+          },
+          {
+            "vendor": "Red Hat",
+            "coef": -4817.945254498278
+          },
+          {
+            "vendor": "Hammerspace",
+            "coef": 4790.953326107096
+          },
+          {
+            "vendor": "Qumulo",
+            "coef": 4661.697415409305
+          },
+          {
+            "vendor": "Monitize360",
+            "coef": -4449.582177417184
+          },
+          {
+            "vendor": "GRAID",
+            "coef": -543.7766711548697
+          }
+        ]
+      }
+    ],
+    "shrink_order": [
+      {
+        "vendor": "Microsoft",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "Weka",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "SUSE",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "Canonical",
+        "under_5pct_of_peak_at_lambda": 0.1
+      },
+      {
+        "vendor": "Red Hat",
+        "under_5pct_of_peak_at_lambda": 1.0
+      },
+      {
+        "vendor": "CTERA",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "DDN",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "OSNexus",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "Scality",
+        "under_5pct_of_peak_at_lambda": 10.0
+      },
+      {
+        "vendor": "Quantum",
+        "under_5pct_of_peak_at_lambda": 0.0
+      },
+      {
+        "vendor": "Qumulo",
+        "under_5pct_of_peak_at_lambda": 0.0
+      },
+      {
+        "vendor": "Pica8",
+        "under_5pct_of_peak_at_lambda": 1.0
+      },
+      {
+        "vendor": "GRAID",
+        "under_5pct_of_peak_at_lambda": 0.0
+      },
+      {
+        "vendor": "Vast",
+        "under_5pct_of_peak_at_lambda": null
+      },
+      {
+        "vendor": "Hammerspace",
+        "under_5pct_of_peak_at_lambda": 0.1
+      },
+      {
+        "vendor": "Monitize360",
+        "under_5pct_of_peak_at_lambda": 10.0
+      },
+      {
+        "vendor": "Xinnor",
+        "under_5pct_of_peak_at_lambda": 0.0
+      }
+    ]
+  },
+  "huber_total": {
+    "intercept": 1388424.9750007903,
+    "slope_per_month": 277296.4529591606,
+    "residual_mad_scale": 2520417.43616076,
+    "rule": "Huber c=1.345；殘差絕對值 > 3×(1.4826×MAD) 才標出。",
+    "flagged": [
+      {
+        "index": 5,
+        "residual": 13410348.730203407,
+        "month": "2026-02-23",
+        "largest_vendor": "Vast",
+        "largest_vendor_dollars": 14684938.0,
+        "month_total": 16185255.97
+      }
+    ],
+    "residuals": [
+      1039662.4049992096,
+      -830277.3379599509,
+      -852824.2709191116,
+      -672699.6538782723,
+      -1887715.7868374325,
+      13410348.730203407,
+      6307388.817244246,
+      -2681602.1457149144,
+      -823326.1286740755,
+      1350161.3083667643,
+      -2372697.9245923962,
+      -331903.95755155757,
+      1283300.589489282
+    ],
+    "note": "異常月不是命中率，也不是毛利。"
+  },
+  "herfindahl": [
+    {
+      "index": 0,
+      "hhi": 0.39541657005573255,
+      "top_vendor": "DDN",
+      "top_dollars": 1349020.0,
+      "top_share": 0.5555895603724114,
+      "month_total": 2428087.38,
+      "month": "2025-09-23"
+    },
+    {
+      "index": 1,
+      "hhi": 0.42094031163416473,
+      "top_vendor": "Microsoft",
+      "top_dollars": 493212.0,
+      "top_share": 0.5903590747766256,
+      "month_total": 835444.0900000001,
+      "month": "2025-10-23"
+    },
+    {
+      "index": 2,
+      "hhi": 0.31500128647645437,
+      "top_vendor": "Microsoft",
+      "top_dollars": 444232.0,
+      "top_share": 0.40747991542529777,
+      "month_total": 1090193.6099999999,
+      "month": "2025-11-23"
+    },
+    {
+      "index": 3,
+      "hhi": 0.2997218438805924,
+      "top_vendor": "Microsoft",
+      "top_dollars": 668529.0,
+      "top_share": 0.43197380371191624,
+      "month_total": 1547614.68,
+      "month": "2025-12-23"
+    },
+    {
+      "index": 4,
+      "hhi": 0.7989544070843192,
+      "top_vendor": "Microsoft",
+      "top_dollars": 543100.0,
+      "top_share": 0.8904811483943957,
+      "month_total": 609895.0,
+      "month": "2026-01-23"
+    },
+    {
+      "index": 5,
+      "hhi": 0.8256406452122036,
+      "top_vendor": "Vast",
+      "top_dollars": 14684938.0,
+      "top_share": 0.9073034141207963,
+      "month_total": 16185255.969999999,
+      "month": "2026-02-23"
+    },
+    {
+      "index": 6,
+      "hhi": 0.45236725595197935,
+      "top_vendor": "DDN",
+      "top_dollars": 6086994.41,
+      "top_share": 0.6503482286751819,
+      "month_total": 9359592.51,
+      "month": "2026-03-23"
+    },
+    {
+      "index": 7,
+      "hhi": 0.7673138851212856,
+      "top_vendor": "Microsoft",
+      "top_dollars": 565350.0,
+      "top_share": 0.8725910559995554,
+      "month_total": 647898.0,
+      "month": "2026-04-23"
+    },
+    {
+      "index": 8,
+      "hhi": 0.6648596446990693,
+      "top_vendor": "Weka",
+      "top_dollars": 2231672.4699999997,
+      "top_share": 0.801758989022075,
+      "month_total": 2783470.4699999997,
+      "month": "2026-05-23"
+    },
+    {
+      "index": 9,
+      "hhi": 0.24660200643589822,
+      "top_vendor": "Hammerspace",
+      "top_dollars": 2163326.0,
+      "top_share": 0.4133016569718251,
+      "month_total": 5234254.36,
+      "month": "2026-06-23"
+    },
+    {
+      "index": 10,
+      "hhi": 0.3266863055574317,
+      "top_vendor": "Microsoft",
+      "top_dollars": 701034.0,
+      "top_share": 0.39192558842369013,
+      "month_total": 1788691.58,
+      "month": "2026-07-23"
+    },
+    {
+      "index": 11,
+      "hhi": 0.7125157486245078,
+      "top_vendor": "Vast",
+      "top_dollars": 3421680.0,
+      "top_share": 0.8331778993869166,
+      "month_total": 4106782.0,
+      "month": "2026-08-23"
+    },
+    {
+      "index": 12,
+      "hhi": 0.7857276472705048,
+      "top_vendor": "Vast",
+      "top_dollars": 5271247.0,
+      "top_share": 0.8786461648833702,
+      "month_total": 5999283.0,
+      "month": "2026-09-23"
+    }
+  ],
+  "totals": {
+    "sum_of_B_to_N_total_sales": 52616462.64999999,
+    "sum_excluding_Vast_and_DDN": 17828984.240000002,
+    "identity_gap_vendors_vs_total": 1.862645149230957e-09
+  },
+  "goal_2025": {
+    "file": "Weekly Report-12312025.xlsx",
+    "sheet": "2025 Goal",
+    "columns": [
+      {
+        "col": "B3",
+        "vendor": "Microsoft (OS)",
+        "goal": 6000000.0,
+        "period_target": 1500000.0,
+        "period_sold": 1605973.0,
+        "sheet_total": 5822322.0,
+        "period_rate": 1.0706486666666666
+      },
+      {
+        "col": "C3",
+        "vendor": "Red Hat (RHEL)",
+        "goal": 500000.0,
+        "period_target": 125000.0,
+        "period_sold": 0.0,
+        "sheet_total": 38875.93,
+        "period_rate": 0.0
+      },
+      {
+        "col": "D3",
+        "vendor": "SUSE, Canonical, and Others",
+        "goal": 200000.0,
+        "period_target": 50000.0,
+        "period_sold": 32590.0,
+        "sheet_total": 136286.0,
+        "period_rate": 0.6518
+      },
+      {
+        "col": "E3",
+        "vendor": "WekaIO",
+        "goal": 15000000.0,
+        "period_target": 3750000.0,
+        "period_sold": 458881.56000000006,
+        "sheet_total": 7539614.669999998,
+        "period_rate": 0.12236841600000002
+      },
+      {
+        "col": "F3",
+        "vendor": "OSNexus",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 53716.8,
+        "sheet_total": 492746.14,
+        "period_rate": 0.2148672
+      },
+      {
+        "col": "G3",
+        "vendor": "Quantum AS/ Cloudian ",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 55409.34,
+        "sheet_total": 537527.02,
+        "period_rate": 0.22163735999999998
+      },
+      {
+        "col": "H3",
+        "vendor": "Qumulo",
+        "goal": 2000000.0,
+        "period_target": 500000.0,
+        "period_sold": 134704.8,
+        "sheet_total": 543487.5800000001,
+        "period_rate": 0.26940959999999997
+      },
+      {
+        "col": "I3",
+        "vendor": "VastData",
+        "goal": 10500000.0,
+        "period_target": 2625000.0,
+        "period_sold": 110660.0,
+        "sheet_total": 4246940.0,
+        "period_rate": 0.04215619047619048
+      },
+      {
+        "col": "J3",
+        "vendor": "GRAID",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 439590.0,
+        "sheet_total": 1331842.0,
+        "period_rate": 1.75836
+      },
+      {
+        "col": "K3",
+        "vendor": "CTERA",
+        "goal": 500000.0,
+        "period_target": 125000.0,
+        "period_sold": 25450.0,
+        "sheet_total": 25450.0,
+        "period_rate": 0.2036
+      },
+      {
+        "col": "L3",
+        "vendor": null,
+        "goal": 300000.0,
+        "period_target": 75000.0,
+        "period_sold": 3258.0,
+        "sheet_total": 72690.88,
+        "period_rate": 0.04344
+      },
+      {
+        "col": "M3",
+        "vendor": "DDN",
+        "goal": 2000000.0,
+        "period_target": 500000.0,
+        "period_sold": 483586.0,
+        "sheet_total": 1832606.0,
+        "period_rate": 0.967172
+      }
+    ]
+  },
+  "goal_2026_sheet": {
+    "file": "Weekly Report-09182026.xlsx",
+    "sheet": "2026 Goal",
+    "columns": [
+      {
+        "col": "B3",
+        "vendor": "Microsoft (OS)",
+        "goal": 6000000.0,
+        "period_target": 1500000.0,
+        "period_sold": 1946611.0,
+        "sheet_total": 6835362.0,
+        "period_rate": 1.2977406666666667
+      },
+      {
+        "col": "C3",
+        "vendor": "Red Hat (RHEL)",
+        "goal": 500000.0,
+        "period_target": 125000.0,
+        "period_sold": 0.0,
+        "sheet_total": 1207.7,
+        "period_rate": 0.0
+      },
+      {
+        "col": "D3",
+        "vendor": "SUSE, Canonical, and Others",
+        "goal": 200000.0,
+        "period_target": 50000.0,
+        "period_sold": 2669.0,
+        "sheet_total": 295069.0,
+        "period_rate": 0.05338
+      },
+      {
+        "col": "E3",
+        "vendor": "WekaIO",
+        "goal": 15000000.0,
+        "period_target": 3750000.0,
+        "period_sold": 241302.0,
+        "sheet_total": 4969570.88,
+        "period_rate": 0.0643472
+      },
+      {
+        "col": "F3",
+        "vendor": "OSNexus",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 12972.0,
+        "sheet_total": 273458.28,
+        "period_rate": 0.051888
+      },
+      {
+        "col": "G3",
+        "vendor": "Quantum AS/ Cloudian ",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 288123.58,
+        "sheet_total": 343532.92000000004,
+        "period_rate": 1.15249432
+      },
+      {
+        "col": "H3",
+        "vendor": "Qumulo",
+        "goal": 2000000.0,
+        "period_target": 500000.0,
+        "period_sold": 17028.0,
+        "sheet_total": 410884.6,
+        "period_rate": 0.034056
+      },
+      {
+        "col": "I3",
+        "vendor": "VastData",
+        "goal": 10500000.0,
+        "period_target": 2625000.0,
+        "period_sold": 9367571.0,
+        "sheet_total": 25897145.0,
+        "period_rate": 3.568598476190476
+      },
+      {
+        "col": "J3",
+        "vendor": "GRAID",
+        "goal": 1000000.0,
+        "period_target": 250000.0,
+        "period_sold": 18480.0,
+        "sheet_total": 774972.0,
+        "period_rate": 0.07392
+      },
+      {
+        "col": "K3",
+        "vendor": "CTERA",
+        "goal": 500000.0,
+        "period_target": 125000.0,
+        "period_sold": 0.0,
+        "sheet_total": 0.0,
+        "period_rate": 0.0
+      },
+      {
+        "col": "L3",
+        "vendor": null,
+        "goal": 300000.0,
+        "period_target": 75000.0,
+        "period_sold": 0.0,
+        "sheet_total": 167414.28,
+        "period_rate": 0.0
+      },
+      {
+        "col": "M3",
+        "vendor": "DDN",
+        "goal": 2000000.0,
+        "period_target": 500000.0,
+        "period_sold": 0.0,
+        "sheet_total": 7541313.41,
+        "period_rate": 0.0
+      }
+    ]
+  },
+  "goal_2026_warning": "不要把 2026 Goal!N9 當成年合計。CTERA 的 K9 指向季欄，季度總計不含 DDN，Hammerspace 等不在表上。"
+}

@@ -1,0 +1,58 @@
+{
+  "snapshot": "2026-07-14",
+  "forecastPeriod": "202607",
+  "metrics": {
+    "forecastItems": 11147,
+    "buyerDirectoryRows": 251,
+    "buyerAssignmentRows": 54048,
+    "configuratorSystems": 615,
+    "goldSkus": 31,
+    "normalizedPartReferences": 128716,
+    "exactPartMatchRows": 94613,
+    "exactBuyerMatchRows": 393968,
+    "genericStorageContexts": 2987,
+    "storageBrandRoutes": 56,
+    "storageBrandOverlayRows": 120516
+  },
+  "coverage": [
+    {
+      "segment": "Normalized system references",
+      "matched": 552,
+      "universe": 609,
+      "percent": 90.64,
+      "method": "exact"
+    },
+    {
+      "segment": "Forecast Master AMD CPU items",
+      "matched": 169,
+      "universe": 181,
+      "percent": 93.37,
+      "method": "exact"
+    },
+    {
+      "segment": "Forecast Master Intel CPU items",
+      "matched": 249,
+      "universe": 304,
+      "percent": 81.91,
+      "method": "exact"
+    },
+    {
+      "segment": "Storage brand routing rows",
+      "matched": 56,
+      "universe": null,
+      "percent": null,
+      "method": "brand-routing"
+    }
+  ],
+  "sourceChecks": {
+    "salesLogicContractSha256": "8fcf1aa5b802fb0c128ae64784fa99e388f6c42e77a2e735ac81442c9a4b5cc1",
+    "configuratorBridgeContractSha256": "9a51bdec2aeb340d2a6c88e2073229962e2d6c3a1317541d88f86c5bb4776ae0",
+    "matchSummarySha256": "16bca03a72ddc371f98e59bad2ba07e3656e6bee26d7617894ce58c17bd90d3e",
+    "forecastItemsSha256": "5e2e67e43e6e03d781eb5a7ff8e5609fde5b239d42212ae3f08ccf7930c35ca0",
+    "buyerAssignmentsSha256": "851e2e6666e8521d17893d768fb09c06e01fb91e1ba57ace8f74ecc457be59b7",
+    "systemCoverageSha256": "73155d3e508051c11a8398aa039b01b51e2956277cea9a29190ae74029e7bc99",
+    "goldOverlaySha256": "5007f7031c4edd9a14460e6e0599fb270e000a06356fe0728356113a0c60f0d4",
+    "storageRoutesSha256": "c203986e21f2196ec55253f0962fdccf19b8bda4f602b740bb546b944f888ab8"
+  },
+  "boundary": "This snapshot establishes Forecast Master item-to-product matching and Buyer/contact routing. It contains no forecast quantity, requested date, booking/order actual, inventory, inbound ETA, capacity, pack-out, or shipping actuals. Routing identifies whom to contact and does not confer approval authority. Storage routing is brand-level, not exact-SKU coverage."
+}

@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>README</title><style>body{max-width:1180px;margin:40px auto;padding:0 32px;font:16px/1.65 system-ui;color:#173b63}a{color:#087543;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%}td,th{border:1px solid #d5e2e9;padding:12px;vertical-align:top}pre{overflow:auto;background:#eef3f5;padding:20px}h1{font-size:32px}</style></head><body><p><a href="../index.html">← Back to presentation</a> · <a href="6c7f53f29076-README.md">Download source</a></p><h1>軟體與伺服器銷售證據簡報</h1>
+<p>本專案將成交文件、郵件、週報與官網快照整理成可追溯的簡報。原始文件、<code>_md/</code> 與既有 Grok 分析保留不改；成交紀錄不能替代未成交報價的分母。</p>
+<p>在專案根目錄，使用已安裝的 Python 環境依序執行：</p>
+<pre><code class="language-sh">python3 analysis/ledger.py &amp;&amp; python3 analysis/emails.py &amp;&amp; python3 analysis/stats.py &amp;&amp; python3 analysis/quotes.py &amp;&amp; python3 analysis/weekly_series.py &amp;&amp; python3 deck/build_deck.py &amp;&amp; python3 -m pytest -q
+python3 deck/build_deck.py --spec deck/spec_interview.json --out deck/out/interview &amp;&amp; python3 deck/dump_text.py --pptx deck/out/interview/vendor_deck.pptx --text deck/out/interview/deck_text.txt
+</code></pre>
+<p>ERP 報價匯出放在 <code>analysis/inputs/quotes_export.csv</code> 或 <code>quotes_export.xlsx</code>，並在 <code>analysis/inputs/quotes_columns.json</code> 設定實際欄名、日期格式、狀態值與工作表。沒有匯出時，簡報顯示待補資料，不估算報價命中率。產業分類改 <code>analysis/industry_map.csv</code>；機型系列分類改 <code>analysis/reference/series_map.json</code>，兩者依規則順序採第一個符合項目。</p>
+<p>簡報規格在 <code>deck/spec.json</code>。<code>deck/out/vendor_deck.pptx</code> 是交付簡報；每頁備註記錄 <code>spec id | claim_level | part</code>。內容過密時產生續頁，保留相同 spec ID 與頁尾的本題頁次。<code>deck/out/resolved.json</code> 記錄引用值與來源標籤，包括圖表輸入及流程節點。</p>
+<p>文字與最終 QA：</p>
+<pre><code class="language-sh">python3 deck/build_deck.py &amp;&amp; python3 deck/dump_text.py &gt; /dev/null &amp;&amp; python3 -m pytest -q
+</code></pre>
+<p>單獨執行 <code>python3 deck/dump_text.py</code> 會輸出逐頁文字，並同步寫入 <code>deck/out/deck_text.txt</code>。需有本機 <code>_md/</code> 才能執行全部真實文件測試；缺少時該類測試會跳過。</p>
+<p>PDF 供目視檢查；LibreOffice 不存在或轉檔失敗時略過，不影響測試結果：</p>
+<pre><code class="language-sh"># PDF 只能在一般 shell 轉；Codex 沙盒內執行 soffice 會 SIGABRT（macOS 跳當機視窗）。
+if [ -x /opt/homebrew/bin/soffice ]; then
+  /opt/homebrew/bin/soffice --headless --convert-to pdf --outdir deck/out deck/out/vendor_deck.pptx || echo '略過 PDF：LibreOffice 轉檔失敗'
+else
+  echo '略過 PDF：未安裝 LibreOffice'
+fi
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>來源標籤</th>
+<th>證據範圍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>週報</td>
+<td>目標與入帳期間資料，重疊週報不可相加</td>
+</tr>
+<tr>
+<td>文件</td>
+<td>SO、PO、郵件等本櫃文件及衍生統計</td>
+</tr>
+<tr>
+<td>官網</td>
+<td>官網快照，附網址與擷取日期</td>
+</tr>
+<tr>
+<td>待驗證</td>
+<td>尚需向負責人確認的組織資料</td>
+</tr>
+<tr>
+<td>產品知識</td>
+<td>產品背景知識，不等同本櫃成交證據</td>
+</tr>
+<tr>
+<td>內部流程</td>
+<td>使用者提供的流程經驗；節點下方數字另以文件證據標示</td>
+</tr>
+</tbody>
+</table></body></html>

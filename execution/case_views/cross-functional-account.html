@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanitized bilingual executive view of Flex AI risk coordination and documented operational recovery.">
+  <title>Flex AI Risk Coordination — Sanitized Executive View</title>
+  <style>
+    :root {
+      --navy: #041e42;
+      --blue: #003a70;
+      --sky: #168cca;
+      --green: #009639;
+      --green-dark: #007d32;
+      --red: #d22630;
+      --ink: #10253f;
+      --muted: #5f7288;
+      --line: #d8e4ec;
+      --paper: #f4f8fb;
+      --surface: #ffffff;
+      --soft-green: #eaf7ef;
+      --soft-blue: #eaf4fa;
+      --shadow: 0 18px 42px rgba(4, 30, 66, .08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html:not([lang="zh-Hant"]) [data-lang="zh"] { display: none !important; }
+    html[lang="zh-Hant"] [data-lang="en"] { display: none !important; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 92% 4%, rgba(22, 140, 202, .16), transparent 27rem),
+        linear-gradient(180deg, #ffffff 0%, var(--paper) 57%, #ffffff 100%);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a, button { font: inherit; }
+    button:focus-visible, a:focus-visible { outline: 3px solid rgba(22, 140, 202, .38); outline-offset: 3px; }
+    .skip-link { position: fixed; top: 12px; left: 12px; z-index: 20; transform: translateY(-160%); padding: 10px 14px; color: #fff; background: var(--navy); border-radius: 8px; font-size: 12px; font-weight: 800; }
+    .skip-link:focus { transform: translateY(0); }
+    .page { width: min(1320px, calc(100% - 72px)); margin: 0 auto; padding: 34px 0 38px; }
+    .case-nav { display: flex; margin-bottom: 18px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 9px 14px; color: var(--navy); background: rgba(255, 255, 255, .9); border: 1px solid rgba(22, 140, 202, .28); border-radius: 999px; box-shadow: 0 6px 18px rgba(4, 30, 66, .06); text-decoration: none; font-size: 12px; font-weight: 850; letter-spacing: .03em; }
+    .back-link:hover { color: #fff; background: var(--blue); border-color: var(--blue); }
+    .back-link:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: 16px; min-width: 0; }
+    .brand img { width: 116px; height: 52px; object-fit: contain; }
+    .brand-copy { min-width: 0; padding-left: 16px; border-left: 1px solid var(--line); }
+    .brand-copy strong { display: block; color: var(--navy); font-size: 13px; letter-spacing: .13em; text-transform: uppercase; }
+    .brand-copy span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .privacy { display: inline-flex; align-items: center; min-height: 34px; padding: 8px 12px; color: var(--blue); background: rgba(255, 255, 255, .84); border: 1px solid rgba(22, 140, 202, .28); border-radius: 999px; font-size: 10px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+    .language-toggle { display: inline-flex; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: #edf4f8; }
+    .language-toggle button { min-width: 40px; min-height: 30px; padding: 6px 9px; border: 0; border-radius: 999px; color: var(--muted); background: transparent; cursor: pointer; font-size: 11px; font-weight: 850; }
+    .language-toggle button[aria-pressed="true"] { color: #fff; background: var(--blue); }
+
+    main { padding-top: 44px; }
+    .eyebrow { color: var(--green-dark); font-size: 11px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(330px, .7fr); gap: 48px; align-items: end; }
+    h1 { max-width: 850px; margin: 14px 0 18px; color: var(--navy); font-size: clamp(46px, 5.7vw, 78px); line-height: .96; letter-spacing: -.055em; }
+    h1 em { color: var(--green); font-style: normal; }
+    .lede { max-width: 860px; margin: 0; color: var(--muted); font-size: clamp(16px, 1.55vw, 20px); line-height: 1.58; }
+    .source-note { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 11px; color: var(--blue); background: var(--soft-blue); border: 1px solid rgba(22, 140, 202, .22); border-radius: 999px; font-size: 10px; font-weight: 850; letter-spacing: .03em; }
+    .source-note::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .hero-download { display: inline-flex; align-items: center; gap: 10px; min-height: 42px; padding: 10px 15px; color: #fff; background: var(--green-dark); border: 1px solid var(--green-dark); border-radius: 10px; text-decoration: none; font-size: 11px; font-weight: 850; }
+    .hero-download::after { content: "↓"; font-size: 15px; }
+    .hero-download:hover { background: var(--green); border-color: var(--green); }
+    .outcome-panel { position: relative; overflow: hidden; min-height: 330px; padding: 30px 30px 76px; color: #fff; background: var(--navy); border-radius: 24px; box-shadow: 0 24px 52px rgba(4, 30, 66, .2); }
+    .outcome-panel::after { content: ""; position: absolute; right: -86px; bottom: -100px; width: 230px; height: 230px; border: 40px solid rgba(0, 150, 57, .55); border-radius: 50%; }
+    .outcome-panel small { position: relative; z-index: 1; color: #90d8f4; font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .outcome-panel h2 { position: relative; z-index: 1; max-width: 360px; margin: 18px 0 14px; font-size: 31px; line-height: 1.08; letter-spacing: -.035em; }
+    .outcome-panel p { position: relative; z-index: 1; max-width: 350px; margin: 0; color: #c6d7e7; font-size: 13px; line-height: 1.55; }
+    .outcome-status { position: absolute; left: 30px; bottom: 28px; z-index: 1; display: inline-flex; align-items: center; gap: 8px; color: #fff; font-size: 11px; font-weight: 850; }
+    .outcome-status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #47d37a; box-shadow: 0 0 0 5px rgba(71, 211, 122, .14); }
+
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 44px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255, 255, 255, .88); box-shadow: var(--shadow); }
+    .metric { min-width: 0; padding: 22px 24px; border-left: 1px solid var(--line); }
+    .metric:first-child { border-left: 0; }
+    .metric strong { display: block; color: var(--navy); font-size: clamp(24px, 2.5vw, 35px); line-height: 1; letter-spacing: -.04em; }
+    .metric span { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; font-weight: 750; letter-spacing: .03em; }
+
+    .section { padding-top: 70px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 26px; }
+    .section-head h2 { max-width: 760px; margin: 9px 0 0; color: var(--navy); font-size: clamp(30px, 3.5vw, 47px); line-height: 1.06; letter-spacing: -.04em; }
+    .section-head p { max-width: 460px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+
+    .program-arc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .phase { position: relative; min-height: 108px; padding: 22px 22px 20px; border-left: 1px solid var(--line); }
+    .phase:first-child { border-left: 0; }
+    .phase:not(:last-child)::after { content: "→"; position: absolute; right: -12px; top: 43px; z-index: 2; display: grid; width: 24px; height: 24px; place-items: center; color: var(--green-dark); background: #fff; border: 1px solid var(--line); border-radius: 50%; font-size: 12px; font-weight: 900; }
+    .phase small { color: var(--green-dark); font-size: 9px; font-weight: 900; letter-spacing: .13em; }
+    .phase b { display: block; margin-top: 10px; color: var(--navy); font-size: 14px; }
+    .phase span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+
+    .track-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .track { position: relative; overflow: hidden; min-height: 226px; padding: 27px 28px; background: rgba(255, 255, 255, .94); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 12px 28px rgba(4, 30, 66, .055); }
+    .track::after { content: attr(data-index); position: absolute; right: 22px; bottom: -12px; color: rgba(0, 58, 112, .055); font-size: 92px; font-weight: 900; letter-spacing: -.08em; }
+    .track-head { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .track-index { color: var(--green-dark); font-size: 10px; font-weight: 900; letter-spacing: .14em; }
+    .status { display: inline-flex; padding: 6px 9px; color: var(--green-dark); background: var(--soft-green); border-radius: 999px; font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .track h3 { position: relative; z-index: 1; margin: 22px 0 9px; color: var(--navy); font-size: 23px; letter-spacing: -.025em; }
+    .track p { position: relative; z-index: 1; max-width: 560px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .track-result { position: relative; z-index: 1; display: flex; align-items: flex-start; gap: 8px; margin-top: 16px; color: var(--ink); font-size: 11px; font-weight: 750; line-height: 1.45; }
+    .track-result::before { content: ""; flex: 0 0 auto; width: 7px; height: 7px; margin-top: 4px; border-radius: 50%; background: var(--green); }
+
+    .artifact-band { padding: 30px; color: #fff; background: linear-gradient(110deg, var(--blue), var(--navy)); border-radius: 24px; box-shadow: 0 20px 46px rgba(4, 30, 66, .15); }
+    .artifact-intro { display: flex; align-items: end; justify-content: space-between; gap: 28px; }
+    .artifact-intro h2 { max-width: 680px; margin: 10px 0 0; font-size: clamp(27px, 3vw, 40px); line-height: 1.08; letter-spacing: -.035em; }
+    .artifact-intro p { max-width: 420px; margin: 0; color: #c9d9e8; font-size: 12px; line-height: 1.55; }
+    .artifact-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; overflow: hidden; margin-top: 28px; border: 1px solid rgba(255, 255, 255, .2); border-radius: 16px; background: rgba(255, 255, 255, .2); }
+    .artifact { min-height: 130px; padding: 20px; background: rgba(4, 30, 66, .54); }
+    .artifact strong { display: block; color: #fff; font-size: 31px; letter-spacing: -.04em; }
+    .artifact b { display: block; margin-top: 9px; color: #fff; font-size: 12px; }
+    .artifact span { display: block; margin-top: 5px; color: #a9c1d7; font-size: 10px; line-height: 1.4; }
+
+    .download-library { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .document-card { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; min-height: 250px; padding: 25px; background: #fff; border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+    .document-cover { position: relative; align-self: stretch; min-height: 178px; padding: 16px 11px; overflow: hidden; color: #fff; background: var(--navy); border-radius: 11px; }
+    .document-card--legal .document-cover { background: var(--blue); }
+    .document-cover::after { content: ""; position: absolute; right: -34px; bottom: -34px; width: 86px; height: 86px; border: 16px solid rgba(0, 150, 57, .75); border-radius: 50%; }
+    .document-cover small { position: relative; z-index: 1; display: block; color: #8fd5f2; font-size: 8px; font-weight: 900; letter-spacing: .14em; }
+    .document-cover strong { position: relative; z-index: 1; display: block; margin-top: 14px; font-size: 19px; line-height: 1; letter-spacing: -.04em; }
+    .document-cover span { position: absolute; right: 11px; bottom: 13px; left: 11px; z-index: 1; color: #c3d8e8; font-size: 8px; font-weight: 800; line-height: 1.35; }
+    .document-body { display: flex; min-width: 0; flex-direction: column; }
+    .document-body .eyebrow { color: var(--green-dark); font-size: 9px; }
+    .document-body h3 { margin: 10px 0 9px; color: var(--navy); font-size: clamp(20px, 2vw, 27px); line-height: 1.05; letter-spacing: -.035em; }
+    .document-body p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .document-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 15px; }
+    .document-meta span { display: inline-flex; padding: 6px 8px; color: var(--blue); background: var(--soft-blue); border-radius: 999px; font-size: 8px; font-weight: 850; letter-spacing: .07em; text-transform: uppercase; }
+    .document-download { display: inline-flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 42px; margin-top: auto; padding: 10px 13px; color: #fff; background: var(--green-dark); border-radius: 9px; text-decoration: none; font-size: 10px; font-weight: 900; letter-spacing: .04em; }
+    .document-download::after { content: "PDF ↓"; font-size: 9px; letter-spacing: .08em; }
+    .document-download:hover { background: var(--green); }
+    .download-note { display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; padding: 14px 16px; color: var(--muted); background: var(--paper); border-left: 4px solid var(--sky); font-size: 10px; line-height: 1.5; }
+    .download-note strong { color: var(--navy); }
+
+    .owner-strip { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .owner { min-width: 0; padding: 20px 16px; border-left: 1px solid var(--line); }
+    .owner:first-child { border-left: 0; }
+    .owner small { display: block; color: var(--green-dark); font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+    .owner b { display: block; margin-top: 8px; color: var(--navy); font-size: 12px; line-height: 1.3; }
+    .owner span { display: block; margin-top: 5px; color: var(--muted); font-size: 9px; line-height: 1.4; }
+
+    .boundary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: #fff; box-shadow: var(--shadow); }
+    .boundary-panel { padding: 30px; }
+    .boundary-panel + .boundary-panel { border-left: 1px solid var(--line); background: var(--soft-blue); }
+    .boundary-panel h3 { margin: 10px 0 18px; color: var(--navy); font-size: 25px; letter-spacing: -.03em; }
+    .boundary-list { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .boundary-list li { display: flex; gap: 10px; color: var(--ink); font-size: 12px; line-height: 1.45; }
+    .boundary-list li::before { content: "✓"; flex: 0 0 auto; display: grid; width: 19px; height: 19px; place-items: center; color: #fff; background: var(--green); border-radius: 50%; font-size: 10px; font-weight: 900; }
+    .boundary-panel + .boundary-panel .boundary-list li::before { content: "→"; background: var(--blue); }
+
+    .transfer { display: grid; grid-template-columns: .34fr 1fr; gap: 28px; align-items: center; margin-top: 70px; padding: 32px; color: #fff; background: var(--green-dark); border-radius: 22px; }
+    .transfer small { display: block; color: #cbf2d9; font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .transfer strong { display: block; margin-top: 8px; font-size: 19px; }
+    .transfer p { margin: 0; font-size: clamp(17px, 2vw, 23px); font-weight: 720; line-height: 1.35; letter-spacing: -.018em; }
+
+    footer { display: flex; justify-content: space-between; gap: 24px; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    footer strong { color: var(--blue); }
+
+    @media (max-width: 1080px) {
+      .hero { grid-template-columns: 1fr; align-items: stretch; }
+      .outcome-panel { min-height: 310px; }
+      .artifact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .owner-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .owner:nth-child(4) { border-left: 0; border-top: 1px solid var(--line); }
+      .owner:nth-child(5), .owner:nth-child(6) { border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 36px, 1320px); padding-top: 22px; }
+      header { align-items: flex-start; flex-wrap: wrap; }
+      .header-actions { width: 100%; justify-content: space-between; }
+      .brand img { width: 94px; height: 44px; }
+      .brand-copy { padding-left: 12px; }
+      .brand-copy strong { font-size: 10px; }
+      .brand-copy span { font-size: 10px; }
+      main { padding-top: 34px; }
+      .hero { gap: 30px; }
+      h1 { font-size: clamp(43px, 12vw, 62px); }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .metric:nth-child(3) { border-left: 0; }
+      .metric:nth-child(3), .metric:nth-child(4) { border-top: 1px solid var(--line); }
+      .section { padding-top: 56px; }
+      .section-head, .artifact-intro { display: block; }
+      .section-head p, .artifact-intro p { margin-top: 14px; }
+      .program-arc { grid-template-columns: 1fr; }
+      .phase { min-height: auto; border-top: 1px solid var(--line); border-left: 0; }
+      .phase:first-child { border-top: 0; }
+      .phase:not(:last-child)::after { right: 22px; top: auto; bottom: -12px; transform: rotate(90deg); }
+      .track-grid { grid-template-columns: 1fr; }
+      .artifact-grid { grid-template-columns: 1fr; }
+      .artifact { min-height: auto; }
+      .download-library { grid-template-columns: 1fr; }
+      .boundary { grid-template-columns: 1fr; }
+      .boundary-panel + .boundary-panel { border-top: 1px solid var(--line); border-left: 0; }
+      .transfer { grid-template-columns: 1fr; gap: 16px; margin-top: 56px; }
+      footer { display: block; }
+      footer span { display: block; margin-top: 7px; }
+    }
+
+    @media (max-width: 480px) {
+      .page { width: min(100% - 24px, 1320px); }
+      .brand { width: 100%; }
+      .brand img { width: 86px; }
+      .privacy { font-size: 8px; }
+      .outcome-panel, .artifact-band, .boundary-panel, .transfer { padding: 24px; }
+      .metric { padding: 18px; }
+      .metric strong { font-size: 25px; }
+      .track { min-height: 0; padding: 23px; }
+      .track h3 { font-size: 21px; }
+      .document-card { grid-template-columns: 72px minmax(0, 1fr); gap: 16px; padding: 20px; }
+      .document-cover { min-height: 164px; }
+      .owner-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .owner:nth-child(3), .owner:nth-child(5) { border-left: 0; }
+      .owner:nth-child(3) { border-top: 1px solid var(--line); }
+      .owner:nth-child(4) { border-left: 1px solid var(--line); }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print { body { background: #fff; } .page { width: 100%; padding: 0; } .case-nav, .language-toggle { display: none !important; } .outcome-panel, .artifact-band, .transfer { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main"><span data-lang="en">Skip to content</span><span data-lang="zh">跳到主要內容</span></a>
+  <div class="page">
+    <nav class="case-nav" aria-label="Portfolio"><a class="back-link" data-back-link href="../Tuo_Cheng_PGM_Portfolio.html?lang=en"><span aria-hidden="true">←</span><span data-lang="en">Back</span><span data-lang="zh">返回上一頁</span></a></nav>
+    <header>
+      <div class="brand">
+        <img src="../assets/brand/supermicro-logo.png" alt="Supermicro">
+        <div class="brand-copy">
+          <strong>Flex AI · Crisis Management</strong>
+          <span><span data-lang="en">Flagship cross-functional program proof</span><span data-lang="zh">旗艦跨部門 program 證明</span></span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="privacy"><span data-lang="en">Sanitized executive view</span><span data-lang="zh">匿名化主管畫面</span></span>
+        <div class="language-toggle" aria-label="Language">
+          <button type="button" data-set-language="en" aria-pressed="true" aria-label="English">EN</button>
+          <button type="button" data-set-language="zh" aria-pressed="false" aria-label="繁體中文">中</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow"><span data-lang="en">F4 · Flagship program proof</span><span data-lang="zh">F4 · 旗艦 Program 證明</span></div>
+          <h1 id="hero-title"><span data-lang="en">Turn crisis into opportunity.<br>Protect company interests.<br><em>Six functions. One recovery.</em></span><span data-lang="zh">危機就是轉機。<br>保護公司利益。<br><em>六方職能，一套 operational recovery。</em></span></h1>
+          <p class="lede"><span data-lang="en">Protecting Supermicro interests meant turning fragmented operational, contractual, commercial, and information risk into one controlled cross-functional program—while technical, financial, and legal decisions remained with their authorized owners.</span><span data-lang="zh">保護美超微利益，代表要把分散的 operational、contractual、commercial 與 information risk，轉成一套受控的跨部門 program；technical、financial 與 legal 決策仍保留給各自授權 owner。</span></p>
+          <div class="source-note"><span data-lang="en">Defend company interests</span><span data-lang="zh">捍衛公司利益</span></div>
+          <div class="hero-actions"><a class="hero-download" href="#downloads"><span data-lang="en">Download reports &amp; Legal brief</span><span data-lang="zh">下載報告與 Legal 文件</span></a></div>
+        </div>
+        <aside class="outcome-panel" aria-label="Controlled outcome">
+          <small><span data-lang="en">Controlled outcome</span><span data-lang="zh">受控成果</span></small>
+          <h2><span data-lang="en">Operational recovery documented. Management package completed.</span><span data-lang="zh">Operational recovery 已記錄；management package 已完成。</span></h2>
+          <p><span data-lang="en">Open conclusions remained visible and stayed with the functions authorized to decide them.</span><span data-lang="zh">尚未定案的結論保持可見，並留給具授權的 functions 決定。</span></p>
+          <div class="outcome-status"><span data-lang="en">Diagnostic + package artifacts directly inspected</span><span data-lang="zh">Diagnostic＋package artifacts 已直接檢查</span></div>
+        </aside>
+      </section>
+
+      <section class="metrics" aria-label="Program scale">
+        <article class="metric"><strong>≈5</strong><span><span data-lang="en">months of stabilization</span><span data-lang="zh">個月風險收斂</span></span></article>
+        <article class="metric"><strong>6</strong><span><span data-lang="en">coordinated functions</span><span data-lang="zh">個協作 functions</span></span></article>
+        <article class="metric"><strong>4</strong><span><span data-lang="en">controlled risk tracks</span><span data-lang="zh">條受控風險線</span></span></article>
+        <article class="metric"><strong>25</strong><span><span data-lang="en">files in the controlled package</span><span data-lang="zh">個 controlled package 檔案</span></span></article>
+      </section>
+
+      <section class="section" aria-labelledby="arc-title">
+        <div class="section-head">
+          <div><div class="eyebrow"><span data-lang="en">Program arc</span><span data-lang="zh">Program 推進路徑</span></div><h2 id="arc-title"><span data-lang="en">From fragmented risk to decision control.</span><span data-lang="zh">從分散風險走到 decision control。</span></h2></div>
+          <p><span data-lang="en">The work was not a single escalation. It was a sequence of fact stabilization, operational coordination, owner routing, and controlled reporting.</span><span data-lang="zh">這不是一次性的 escalation，而是一段 fact stabilization、operational coordination、owner routing 與 controlled reporting 的連續過程。</span></p>
+        </div>
+        <div class="program-arc">
+          <article class="phase"><small>01 · STABILIZE</small><b><span data-lang="en">Build one factual baseline</span><span data-lang="zh">建立單一事實基準</span></b><span><span data-lang="en">Separate source, observation, inference, and open status.</span><span data-lang="zh">拆開 source、observation、inference 與 open status。</span></span></article>
+          <article class="phase"><small>02 · RECOVER</small><b><span data-lang="en">Coordinate operations</span><span data-lang="zh">協調 operational recovery</span></b><span><span data-lang="en">Connect technical work, repair readiness, delivery, and return to service.</span><span data-lang="zh">串接 technical work、repair readiness、delivery 與 return to service。</span></span></article>
+          <article class="phase"><small>03 · ROUTE</small><b><span data-lang="en">Protect decision rights</span><span data-lang="zh">保護 decision rights</span></b><span><span data-lang="en">Send each commercial, technical, and legal question to its authorized owner.</span><span data-lang="zh">把 commercial、technical 與 legal 問題交給正確授權 owner。</span></span></article>
+          <article class="phase"><small>04 · CONTROL</small><b><span data-lang="en">Seal the management record</span><span data-lang="zh">封裝 management record</span></b><span><span data-lang="en">Chronology, actions, corrections, handling rules, and integrity control.</span><span data-lang="zh">Chronology、actions、corrections、handling rules 與 integrity control。</span></span></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tracks-title">
+        <div class="section-head">
+          <div><div class="eyebrow"><span data-lang="en">Four risk tracks</span><span data-lang="zh">四條風險線</span></div><h2 id="tracks-title"><span data-lang="en">One program. Four distinct truths.</span><span data-lang="zh">同一個 program，四種必須分開的真相。</span></h2></div>
+          <p><span data-lang="en">Coordination created speed and consistency; lane separation preserved accuracy and authority.</span><span data-lang="zh">Coordination 帶來速度與一致性；lane separation 則保留準確性與決策權。</span></p>
+        </div>
+        <div class="track-grid">
+          <article class="track" data-index="01">
+            <div class="track-head"><span class="track-index">01 · OPERATIONS</span><span class="status"><span data-lang="en">Documented</span><span data-lang="zh">已記錄</span></span></div>
+            <h3><span data-lang="en">Operational Recovery</span><span data-lang="zh">Operational Recovery</span></h3>
+            <p><span data-lang="en">Coordinated RMA, repair, a 32h 12m final diagnostic PASS, delivery, and recorded reinstallation one day ahead of the written commitment.</span><span data-lang="zh">協調 RMA、repair、32h 12m final diagnostic PASS、delivery，並留下比書面承諾提前一天完成 reinstallation 的紀錄。</span></p>
+            <div class="track-result"><span data-lang="en">Recovery state documented; final technical disposition remained with Technical / Engineering.</span><span data-lang="zh">Recovery state 已記錄；最終 technical disposition 仍由 Technical／Engineering 決定。</span></div>
+          </article>
+          <article class="track" data-index="02">
+            <div class="track-head"><span class="track-index">02 · CONTRACT</span><span class="status"><span data-lang="en">Owner-routed</span><span data-lang="zh">已轉交 owner</span></span></div>
+            <h3><span data-lang="en">Contract &amp; Legal</span><span data-lang="zh">合約與 Legal</span></h3>
+            <p><span data-lang="en">Visually reviewed the 15-page signed source, separated operative facts from interpretation, and prepared a clean chronology for Legal / Contracts review.</span><span data-lang="zh">逐頁檢視 15-page signed source，區分 operative facts 與 interpretation，並為 Legal／Contracts 整理 clean chronology。</span></p>
+            <div class="track-result"><span data-lang="en">Causation and liability stayed outside Sales / Program authority.</span><span data-lang="zh">Causation 與 liability 不由 Sales／Program 越權定案。</span></div>
+          </article>
+          <article class="track" data-index="03">
+            <div class="track-head"><span class="track-index">03 · COMMERCIAL</span><span class="status"><span data-lang="en">Controlled</span><span data-lang="zh">已受控</span></span></div>
+            <h3><span data-lang="en">Refund &amp; Commercial</span><span data-lang="zh">Refund 與 Commercial</span></h3>
+            <p><span data-lang="en">Captured the refund, complimentary PoC, and compensation request; preserved the source trail; avoided unauthorized commitments; and routed the decision to Finance, Legal, and management.</span><span data-lang="zh">記錄 refund、complimentary PoC 與 compensation request，保留 source trail、不做未授權承諾，並把 decision 交給 Finance、Legal 與 management。</span></p>
+            <div class="track-result"><span data-lang="en">Refund entitlement remained an authorized-owner decision.</span><span data-lang="zh">Refund entitlement 仍由具授權的 owner 決定。</span></div>
+          </article>
+          <article class="track" data-index="04">
+            <div class="track-head"><span class="track-index">04 · GOVERNANCE</span><span class="status"><span data-lang="en">Package complete</span><span data-lang="zh">Package 已完成</span></span></div>
+            <h3><span data-lang="en">Total Report &amp; Governance</span><span data-lang="zh">總報告與治理</span></h3>
+            <p><span data-lang="en">Built a source-controlled management package joining a 30-event chronology, action ownership, corrections, audience handling, and 24 hash-listed artifacts plus manifest.</span><span data-lang="zh">建立 source-controlled management package，整合 30-event chronology、action ownership、correction、audience handling，以及 24 個 hash-listed artifacts 與 manifest。</span></p>
+            <div class="track-result"><span data-lang="en">The package documents the program; it does not manufacture a legal or technical conclusion.</span><span data-lang="zh">Package 用來記錄 program，不用來自行製造 legal 或 technical conclusion。</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="artifacts-title">
+        <div class="artifact-band">
+          <div class="artifact-intro">
+            <div><div class="eyebrow" style="color:#86d9ad"><span data-lang="en">Controlled deliverables</span><span data-lang="zh">受控交付物</span></div><h2 id="artifacts-title"><span data-lang="en">A management record that can be checked, corrected, and handed off.</span><span data-lang="zh">一套能被檢查、修正與交接的 management record。</span></h2></div>
+            <p><span data-lang="en">Artifact scale: 15-page signed source · 12-page formal report · 12 visible-sheet register · 25 files in the controlled package. Private source content is not reproduced.</span><span data-lang="zh">交付規模：15 頁 signed source · 12 頁 formal report · 12 個 visible-sheet register · controlled package 共 25 個檔案；此畫面不重現 private source content。</span></p>
+          </div>
+          <div class="artifact-grid">
+            <article class="artifact"><strong>15</strong><b><span data-lang="en">pages · signed source</span><span data-lang="zh">頁 · signed source</span></b><span><span data-lang="en">Visually inspected source baseline</span><span data-lang="zh">逐頁檢視的 source baseline</span></span></article>
+            <article class="artifact"><strong>12</strong><b><span data-lang="en">pages · formal report</span><span data-lang="zh">頁 · formal report</span></b><span><span data-lang="en">Source-bounded management record</span><span data-lang="zh">Source-bounded management record</span></span></article>
+            <article class="artifact"><strong>12</strong><b><span data-lang="en">visible sheets · register</span><span data-lang="zh">個 visible sheets · register</span></b><span><span data-lang="en">Actions, owners, sources, and corrections</span><span data-lang="zh">Actions、owners、sources 與 corrections</span></span></article>
+            <article class="artifact"><strong>25</strong><b><span data-lang="en">files · controlled package</span><span data-lang="zh">個檔案 · controlled package</span></b><span><span data-lang="en">Method, deliverables, reviews, and integrity</span><span data-lang="zh">Method、deliverables、reviews 與 integrity</span></span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="downloads" aria-labelledby="downloads-title">
+        <div class="section-head">
+          <div><div class="eyebrow"><span data-lang="en">Supervisor document library</span><span data-lang="zh">主管版文件庫</span></div><h2 id="downloads-title"><span data-lang="en">Download the report. Inspect the operating judgment.</span><span data-lang="zh">下載報告，直接檢視 operating judgment。</span></h2></div>
+          <p><span data-lang="en">Two newly authored, bilingual, supervisor-ready PDFs preserve the program proof while excluding private source content and legal-sensitive strategy.</span><span data-lang="zh">兩份新製作的中英雙語主管版 PDF，保留 program 證明，同時排除 private source content 與 legal-sensitive strategy。</span></p>
+        </div>
+        <div class="download-library">
+          <article class="document-card">
+            <div class="document-cover" aria-hidden="true"><small>F4 · REPORT</small><strong>FLEX<br>AI</strong><span>Five-Month Program Coordination</span></div>
+            <div class="document-body">
+              <div class="eyebrow"><span data-lang="en">Executive case report</span><span data-lang="zh">主管案例報告</span></div>
+              <h3><span data-lang="en">Five-Month Executive Case Report</span><span data-lang="zh">五個月 Executive Case Report</span></h3>
+              <p><span data-lang="en">Action, decision discipline, documented result, four risk tracks, six functions, deliverable scale, and PGM transfer.</span><span data-lang="zh">涵蓋 action、decision discipline、documented result、四條風險線、六個 functions、交付規模與 PGM transfer。</span></p>
+              <div class="document-meta"><span>4 pages</span><span>EN + 中</span><span>Supervisor-ready</span></div>
+              <a class="document-download" data-flex-download="executive-report" href="../downloads/flex-ai/FlexAI_Five_Month_Executive_Case_Report_EN_CN.pdf" download="FlexAI_Five_Month_Executive_Case_Report_EN_CN.pdf"><span data-lang="en">Download executive report</span><span data-lang="zh">下載 Executive Report</span></a>
+            </div>
+          </article>
+          <article class="document-card document-card--legal">
+            <div class="document-cover" aria-hidden="true"><small>LEGAL · PROCESS</small><strong>CTRL<br>BRIEF</strong><span>Contract · Legal · Refund Governance</span></div>
+            <div class="document-body">
+              <div class="eyebrow"><span data-lang="en">Legal coordination brief</span><span data-lang="zh">Legal coordination 文件</span></div>
+              <h3><span data-lang="en">Contract, Legal &amp; Refund Governance Extract</span><span data-lang="zh">Contract、Legal 與 Refund Governance Extract</span></h3>
+              <p><span data-lang="en">Issue-to-owner framework, refund control, preservation discipline, decision rights, and distribution boundaries. Not legal advice and not the original internal Legal referral.</span><span data-lang="zh">涵蓋 issue-to-owner framework、refund control、preservation discipline、decision rights 與 distribution boundaries；不是 legal advice，也不是原始內部 Legal referral。</span></p>
+              <div class="document-meta"><span>3 pages</span><span>EN + 中</span><span>Process brief</span></div>
+              <a class="document-download" data-flex-download="legal-brief" href="../downloads/flex-ai/FlexAI_Contract_Legal_Refund_Governance_Extract_EN_CN.pdf" download="FlexAI_Contract_Legal_Refund_Governance_Extract_EN_CN.pdf"><span data-lang="en">Download Legal process brief</span><span data-lang="zh">下載 Legal Process Brief</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="download-note"><span><strong><span data-lang="en">Access boundary:</span><span data-lang="zh">存取邊界：</span></strong> <span data-lang="en">The private source report, signed agreement, original Legal referral, correspondence, and raw technical records remain access-controlled and are intentionally not linked from this portfolio.</span><span data-lang="zh">Private source report、signed agreement、原始 Legal referral、correspondence 與 raw technical records 仍受存取控制，本 Portfolio 刻意不提供連結。</span></span></div>
+      </section>
+
+      <section class="section" aria-labelledby="owners-title">
+        <div class="section-head">
+          <div><div class="eyebrow"><span data-lang="en">Six coordinated functions</span><span data-lang="zh">六個協作 functions</span></div><h2 id="owners-title"><span data-lang="en">Shared baseline. Separate authority.</span><span data-lang="zh">共用 baseline，各自保留 authority。</span></h2></div>
+          <p><span data-lang="en">Program leadership synchronized facts, dependencies, owners, dates, and next decisions without impersonating a specialist function.</span><span data-lang="zh">Program leadership 同步 facts、dependencies、owners、dates 與 next decisions，但不取代專業 function。</span></p>
+        </div>
+        <div class="owner-strip" role="list">
+          <article class="owner" role="listitem"><small>01</small><b>Account / Program</b><span><span data-lang="en">Context, baseline, cadence</span><span data-lang="zh">Context、baseline、cadence</span></span></article>
+          <article class="owner" role="listitem"><small>02</small><b>RMA / Engineering</b><span><span data-lang="en">Diagnostics and disposition</span><span data-lang="zh">Diagnostics 與 disposition</span></span></article>
+          <article class="owner" role="listitem"><small>03</small><b>Repair / Facility</b><span><span data-lang="en">Physical work and site facts</span><span data-lang="zh">Physical work 與 site facts</span></span></article>
+          <article class="owner" role="listitem"><small>04</small><b>Legal / Contracts</b><span><span data-lang="en">Interpretation, liability, remedy</span><span data-lang="zh">Interpretation、liability、remedy</span></span></article>
+          <article class="owner" role="listitem"><small>05</small><b>Finance / Commercial</b><span><span data-lang="en">Refund and concession authority</span><span data-lang="zh">Refund 與 concession authority</span></span></article>
+          <article class="owner" role="listitem"><small>06</small><b>IT / Security</b><span><span data-lang="en">Access, retention, secure handling</span><span data-lang="zh">Access、retention、secure handling</span></span></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="boundary-title">
+        <div class="section-head">
+          <div><div class="eyebrow"><span data-lang="en">Outcome boundary</span><span data-lang="zh">成果邊界</span></div><h2 id="boundary-title"><span data-lang="en">Strong execution without overclaiming authority.</span><span data-lang="zh">強力執行，但不越權宣稱。</span></h2></div>
+        </div>
+        <div class="boundary">
+          <article class="boundary-panel">
+            <div class="eyebrow"><span data-lang="en">Documented in this program</span><span data-lang="zh">本 program 已記錄</span></div>
+            <h3><span data-lang="en">What the work demonstrates</span><span data-lang="zh">這項工作證明什麼</span></h3>
+            <ul class="boundary-list">
+              <li><span data-lang="en">Operational recovery and return-to-service state were recorded.</span><span data-lang="zh">Operational recovery 與 return-to-service state 已記錄。</span></li>
+              <li><span data-lang="en">A controlled 25-file management package was completed.</span><span data-lang="zh">25-file controlled management package 已完成。</span></li>
+              <li><span data-lang="en">Facts, open questions, owners, dates, and corrections were kept distinct.</span><span data-lang="zh">Facts、open questions、owners、dates 與 corrections 保持分離。</span></li>
+              <li><span data-lang="en">Sensitive material was kept out of the executive view.</span><span data-lang="zh">Sensitive material 未進入主管版畫面。</span></li>
+            </ul>
+          </article>
+          <article class="boundary-panel">
+            <div class="eyebrow"><span data-lang="en">Retained by authorized owners</span><span data-lang="zh">保留給授權 owners</span></div>
+            <h3><span data-lang="en">What the program did not self-decide</span><span data-lang="zh">本 program 不自行定案什麼</span></h3>
+            <ul class="boundary-list">
+              <li><span data-lang="en">Causation</span><span data-lang="zh">Causation</span></li>
+              <li><span data-lang="en">Liability</span><span data-lang="zh">Liability</span></li>
+              <li><span data-lang="en">Refund entitlement</span><span data-lang="zh">Refund entitlement</span></li>
+              <li><span data-lang="en">Final technical disposition</span><span data-lang="zh">Final technical disposition</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="transfer" aria-label="PGM transfer">
+        <div><small>PGM TRANSFER</small><strong><span data-lang="en">Why this matters</span><span data-lang="zh">為什麼重要</span></strong></div>
+        <p><span data-lang="en">The same discipline transfers to demand-to-ship risk: one baseline, visible variance, named owner, authorized decision, and a dated next check.</span><span data-lang="zh">同一套 discipline 可以轉移到 demand-to-ship risk：一套 baseline、可見 variance、明確 owner、授權 decision，以及有日期的 next check。</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <span><strong>Flex AI · F4 Flagship Proof</strong> · <span data-lang="en">Sanitized internal career-context presentation</span><span data-lang="zh">匿名化內部職涯情境展示</span></span>
+      <span><span data-lang="en">No private source material is reproduced.</span><span data-lang="zh">本畫面不重現 private source material。</span></span>
+    </footer>
+  </div>
+
+  <script>
+    (() => {
+      const setLanguage = (lang) => {
+        const isZh = lang === 'zh';
+        document.documentElement.lang = isZh ? 'zh-Hant' : 'en';
+        document.querySelectorAll('[data-set-language]').forEach((button) => {
+          button.setAttribute('aria-pressed', String(button.dataset.setLanguage === lang));
+        });
+        document.querySelector('[data-back-link]').href = `../Tuo_Cheng_PGM_Portfolio.html?lang=${lang}`;
+        document.title = isZh
+          ? 'Flex AI 危機管理 — 匿名化主管畫面'
+          : 'Flex AI Crisis Management — Sanitized Executive View';
+      };
+
+      document.querySelectorAll('[data-set-language]').forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.setLanguage));
+      });
+
+      setLanguage(new URLSearchParams(window.location.search).get('lang') === 'zh' ? 'zh' : 'en');
+    })();
+  </script>
+</body>
+</html>

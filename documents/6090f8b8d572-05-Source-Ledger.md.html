@@ -1,0 +1,223 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>05-Source-Ledger</title><style>body{max-width:1180px;margin:40px auto;padding:0 32px;font:16px/1.65 system-ui;color:#173b63}a{color:#087543;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%}td,th{border:1px solid #d5e2e9;padding:12px;vertical-align:top}pre{overflow:auto;background:#eef3f5;padding:20px}h1{font-size:32px}</style></head><body><p><a href="../index.html">← Back to presentation</a> · <a href="6090f8b8d572-05-Source-Ledger.md">Download source</a></p><h1>Source and claim ledger</h1>
+<p>Checked 2026-09-24. Public product claims are current-page statements, not measured head-to-head results. Local commercial figures describe only the specified archive or workbook. An absence in a public list or this archive is not proof of nonexistence elsewhere.</p>
+<h2>Public primary sources</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Direct source</th>
+<th>Supports</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td><a href="https://www.supermicro.com/en/solutions/software-defined-storage">Supermicro Software-Defined Storage page</a></td>
+<td>Publicly lists all five assigned vendors among Supermicro SDS solutions and describes the hardware platform benefits.</td>
+<td>The public roster does not establish an exact current SKU, price, or NVIDIA certification. It does not imply the partnerships or quoting need to start from zero.</td>
+</tr>
+<tr>
+<td>N1</td>
+<td><a href="https://docs.nvidia.com/certification-programs/certified-storage/latest/systems-list.html">NVIDIA-Certified Storage systems list</a></td>
+<td>File-based NCP: DDN AI400X3/AI400X3i. Object-based Foundation: Cloudian Hyperstore Flash 1100. Hammerspace, OSNEXUS, SteelDome are not listed in that public list. NVIDIA page says last updated 2026-09-07.</td>
+<td>Product/configuration specific; list absence is not proof of all possible private qualifications.</td>
+</tr>
+<tr>
+<td>N2</td>
+<td><a href="https://docs.nvidia.com/certification-programs/certified-storage/latest/nvidia-certified-storage.html">NVIDIA-Certified Storage certification levels</a></td>
+<td>Foundation, Enterprise and NVIDIA Cloud Partner (NCP) storage-level definitions; NCP adds tenant isolation, security, encryption, key management, multitenant network and QoS for public AI cloud use.</td>
+<td>The listed storage system's NCP-level certification does not itself certify its vendor as a cloud service provider.</td>
+</tr>
+<tr>
+<td>N3</td>
+<td><a href="https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/partners/">NVIDIA Cloud Partner program</a></td>
+<td>Separately describes NVIDIA's cloud-service-provider partner program.</td>
+<td>Do not assign cloud-provider status to a storage ISV based on NCP-level storage-system certification.</td>
+</tr>
+<tr>
+<td>N4</td>
+<td><a href="https://docs.nvidia.com/gpudirect-storage/release-notes/index.html">NVIDIA GPUDirect Storage release notes</a></td>
+<td>Hammerspace 5.0 appears in GDS compatibility information.</td>
+<td>GDS support or vendor self-certification is not NCP-level storage certification.</td>
+</tr>
+<tr>
+<td>D1</td>
+<td><a href="https://www.ddn.com/press-releases/ddn-launches-next-gen-data-intelligence-platform-at-isc-2025-to-power-ai-and-hpc-at-enterprise-scale/">DDN ISC 2025 AI400X3 release</a>, <a href="https://www.ddn.com/blog/ddn-launches-ai400x3-and-infinia-2.1-at-isc-2025/">AI400X3 launch explanation</a>, <a href="https://www.ddn.com/products/lustre-file-system-exascaler/">EXAScaler product page</a></td>
+<td>The release identifies AI400X3 as EXAScaler-powered; the launch explanation calls that exact appliance all-flash; the EXAScaler page describes its parallel-file software.</td>
+<td>These vendor pages do not themselves establish NCP status; use NVIDIA's exact-model list [N1] for that claim. The old <code>/products/ai400x3/</code> address now redirects to the AI400X3M page, so it is not used as exact-model evidence.</td>
+</tr>
+<tr>
+<td>D2</td>
+<td><a href="https://www.ddn.com/products/infinia/">DDN Infinia</a></td>
+<td>Infinia S3/POSIX and AI data-platform architecture.</td>
+<td>Separate from EXAScaler; no inherited benchmark/certification.</td>
+</tr>
+<tr>
+<td>D3</td>
+<td><a href="https://www.ddn.com/blog/optimized-ai-data-management-using-ddn-exascaler-hot-pools/">DDN EXAScaler Hot Pools</a></td>
+<td>Flash plus HDD policy placement in an EXAScaler namespace.</td>
+<td>Vendor product explanation; sizing/benefit depends on configuration.</td>
+</tr>
+<tr>
+<td>D4</td>
+<td><a href="https://www.ddn.com/press-releases/ddn-unveils-next-generation-ai-hpc-data-intelligence-innovations-at-isc-2026/">DDN ISC 2026 AI400X3M announcement</a></td>
+<td>Public release expected general availability by end of Q3 2026.</td>
+<td>As of 2026-09-24, availability/orderable SKU is not established from this statement.</td>
+</tr>
+<tr>
+<td>H1</td>
+<td><a href="https://hammerspace.com/technical-brief-tier-0/">Hammerspace Tier 0 technical brief</a> and <a href="https://go.hammerspace.com/hubfs/Website%20Documents/Solution%20Briefs/Hammerspace%20Tier%200%20Solution%20Guide.pdf">Tier 0 Solution Guide PDF</a></td>
+<td>Tier 0 GPU/CPU-node NVMe; optional external flash Tier 1; HDD/object Tier 2; locality/policy design.</td>
+<td>This is Hammerspace's architecture vocabulary, not a universal storage-tier definition.</td>
+</tr>
+<tr>
+<td>H2</td>
+<td><a href="https://hammerspace.com/product-architecture/">Hammerspace product architecture</a> and <a href="https://hammerspace.com/hammerspace-ready-nodes-with-supermicro/">Hammerspace Ready Nodes with Supermicro</a></td>
+<td>Global namespace and policy orchestration; the Ready Nodes page names Anvil metadata and DSX data-service functions on Supermicro hardware.</td>
+<td>It spans storage but does not make an underlying disk/network faster by itself. Ready Node examples do not replace current quote approval.</td>
+</tr>
+<tr>
+<td>C1</td>
+<td><a href="https://cloudian.com/products/product-specifications/">Cloudian HyperStore specifications</a></td>
+<td>Flash 1100 NVMe and HDD capacity platform options.</td>
+<td>Object storage can be hot or cold; assess workload.</td>
+</tr>
+<tr>
+<td>C2</td>
+<td><a href="https://cloudian.com/products/hyperstore-object-storage-na/">Cloudian HyperStore product</a> and <a href="https://cloudian.com/products/security-features/">security features</a></td>
+<td>Native S3, capacity, data protection, object lock, replication/erasure coding.</td>
+<td>Vendor functional claims, not independent performance rankings.</td>
+</tr>
+<tr>
+<td>C3</td>
+<td><a href="https://cloudian.com/wp-content/themes/merged/hyperstore-help/8.2.1/Content/Resources/HyperStoreAdminGuide_v-8.2.pdf">Cloudian HyperStore 8.2 Administration Guide</a></td>
+<td>Version-specific file service and simultaneous-access limits.</td>
+<td>Confirm quoted release/architecture; do not universalize a single guide across versions.</td>
+</tr>
+<tr>
+<td>O1</td>
+<td><a href="https://wiki.osnexus.com/index.php/QuantaStor_Internal_Architecture">OSNEXUS QuantaStor internal architecture</a></td>
+<td>ZFS scale-up and Ceph scale-out architecture, protocols.</td>
+<td>Each pool/design needs its own protocol and protection check.</td>
+</tr>
+<tr>
+<td>O2</td>
+<td><a href="https://www.osnexus.com/quantastor-sds-reference-configuration-guide">OSNEXUS / Supermicro configuration guide</a> and <a href="https://wiki.osnexus.com/index.php?title=Designing_Systems">system-design guide</a></td>
+<td>All-flash/hybrid configurations and design choices.</td>
+<td>A guide is a candidate configuration; internal current SKU, price and support approval still required.</td>
+</tr>
+<tr>
+<td>T1</td>
+<td><a href="https://www.supermicro.com/solutions/Solution_Brief_SteelDome.pdf">Supermicro + SteelDome solution brief</a></td>
+<td>StratiSTOR / StratiSERV / HyperSERV distinction and documented all-NVMe BigTwin solution.</td>
+<td>A document-listed configuration is not evidence of an order in the local archive.</td>
+</tr>
+<tr>
+<td>T2</td>
+<td><a href="https://www.supermicro.com/en/solutions/steeldome">Supermicro SteelDome solution page</a></td>
+<td>Software-defined storage and compute pairing with featured Supermicro systems.</td>
+<td>Current quote eligibility and BOM require internal check.</td>
+</tr>
+<tr>
+<td>T3</td>
+<td><a href="https://www.steeldome.com/solutions/archival">SteelDome archival solution</a></td>
+<td>Vendor describes archive use case.</td>
+<td>Does not establish a validated HDD/archive Supermicro bundle.</td>
+</tr>
+<tr>
+<td>B1</td>
+<td><a href="https://www.supermicro.com/en/solutions/ddn">Supermicro DDN solution page</a> and <a href="https://www.supermicro.com/solutions/Solution_Brief_SMCI_DDN_HyperPOD.pdf">DDN HyperPOD solution brief</a> pp. 3–7</td>
+<td>DDN Infinia AI/RAG positioning, NVIDIA AI Enterprise stack description and the Medium reference design's published compute, NVMe storage and networking quantities.</td>
+<td>A reference design is not an approved current quote. The brief's power figures need configuration-specific reconciliation before facility sizing. Infinia does not inherit AI400X3/3i's NCP storage certification.[N1]</td>
+</tr>
+<tr>
+<td>B2</td>
+<td><a href="https://www.supermicro.com/en/products/system/storage/1u/asg-1115s-ne316r">Supermicro ASG-1115S-NE316R product page</a></td>
+<td>Six 16-bay E3.S NVMe storage servers can physically house the 96 drives in the published Medium reference design.[B1]</td>
+<td>CPU, DIMM, NIC and exact drive part numbers remain to be chosen and approved.</td>
+</tr>
+<tr>
+<td>B3</td>
+<td><a href="https://www.supermicro.com/en/solutions/cloudian">Supermicro Cloudian solution page</a> and <a href="https://www.supermicro.com/sites/default/files/content_resources/static_resources/solutions/cloudian/Datasheet_SMCI_Cloudian_Solution_Configurations.pdf">Cloudian solution configurations</a></td>
+<td>Cloudian HyperStore S3 capacity use case and the SSG-521E-E1CR24L platform row: Xeon 6430, fully populated RAM, Broadcom/NVIDIA high-speed NIC, two 480GB M.2 boot devices, HDD media.</td>
+<td>The sheet explicitly makes exact configuration dependent on performance/sizing; it does not specify a full cluster or HDD quantity/capacity, NIC model, license, support or price.</td>
+</tr>
+<tr>
+<td>B4</td>
+<td><a href="https://www.supermicro.com/en/products/system/storage/2u/ssg-521e-e1cr24l">Supermicro SSG-521E-E1CR24L product page</a></td>
+<td>Each Cloudian-listed server has 24 front/top 3.5-inch SAS/SATA data-drive bays, a Broadcom 3808 HBA and redundant 1600W supplies.</td>
+<td>Bay count is capacity, not populated drives; the three-server illustrative scenario is a planning assumption, not a published Supermicro BOM.</td>
+</tr>
+</tbody>
+</table>
+<h2>Local primary and derived sources</h2>
+<p>The original Vendor folder was read in place; this package does not contain raw customer documents.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Path / exact field</th>
+<th>Supports</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L1</td>
+<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>program_matrix</code> and <code>vendors.DDN.product_split</code></td>
+<td>Cabinet SO counts: DDN 8, Hammerspace 3, Cloudian 0, OSNEXUS 63, SteelDome 0; DDN 6 deduplicated deals, 4 appliance and 2 Infinia.</td>
+<td>Historical, partial cabinet; count is SOs, not vendor revenue, quota performance or win rate.</td>
+</tr>
+<tr>
+<td>L2</td>
+<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>friction</code>; <a href="../documents/a0bb4a818d2b-email_evidence.json">analysis/email_evidence.json</a></td>
+<td>50 of 388 SOs flagged reissue; keyword mentions: end-customer 199, CQ 20, BQ 12, IBOM 18.</td>
+<td>Email hits overlap; they are traces, not required steps or measured delay/PM hours.</td>
+</tr>
+<tr>
+<td>L3</td>
+<td><a href="/Users/tuocheng/Documents/工作/SMC/Vendor/Weekly%20Report-09182026.xlsx">Weekly Report-09182026.xlsx</a>, <code>2026 Goal</code> rows 1–6; <a href="../documents/29be6537a8ae-regression_results.json">regression_results.json</a>, <code>goal_2025</code> and <code>regularity</code></td>
+<td>Goal sheet labels Solution Team, SW Validation and Tech Support, Solution Owner; no separately labeled sales attach owner. 2025 Cloudian shares a goal column with Quantum.</td>
+<td>Missing field does not prove commission policy or accountability in other systems. Two weekly reports are rolling versions and must not be added.</td>
+</tr>
+<tr>
+<td>L4</td>
+<td><a href="../documents/fdf42c38d5ba-00---Vendor-.md">00-導讀-Vendor銷售診斷.md</a> §§1,6,8; <a href="../documents/a96453549a31-quotes_columns.json">analysis/inputs/quotes_columns.json</a></td>
+<td>Full eligible opportunity and ERP <code>86</code> quote populations, lost/never-quoted cases, customer-request and quote stage timestamps, cost and PM time missing from current archive.</td>
+<td>Cannot estimate opportunity→SO or quote→SO conversion, end-to-end transaction time, whole-deal margin or PM workload.</td>
+</tr>
+<tr>
+<td>L5</td>
+<td><a href="/Users/tuocheng/Documents/工作/SMC/Vendor/RedHat/Red%20Hat%20PO/Redhat%20PO%20request.docx">Redhat PO request.docx</a>, paragraph 1</td>
+<td>SFT POD provided when system order is ready to ship.</td>
+<td>Fulfillment timing only; does not prove software sale occurred after order or sales commission is absent.</td>
+</tr>
+<tr>
+<td>L6</td>
+<td><a href="../documents/e3a9d7b8f7c6-00----Claude.md">00-週五面試主線-給Claude.md</a> §§panel, 90-day plan</td>
+<td>Panel's five assigned vendors and original interview narrative.</td>
+<td>Older notes saying SteelDome solution page has no models are superseded by its current Supermicro page and 2026 joint brief.[T1][T2]</td>
+</tr>
+<tr>
+<td>L7</td>
+<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>salesperson_concentration</code>, <code>salespersons[*].so_count</code>; <a href="../documents/4d9f6b43fabb-stats.py">analysis/stats.py</a>, <code>salesperson_stats</code></td>
+<td>Among 315 SOs with salesperson tags and 134 people, the five highest by total-order value account for about 43% of the <strong>recorded</strong> total-order dollars assigned to tagged reps.</td>
+<td>Some tagged SOs lack value; this measures historical recorded order-value concentration, not CRM account ownership, monopoly, access to PM, commission rules or cause. Top five by SO count and by dollars need not be the same people.</td>
+</tr>
+<tr>
+<td>U1</td>
+<td>User-provided 2026-09-24 process chains: <code>Configurator → IBOM → CQ → PGM</code> and <code>FAE → Buyer → System PM → Solution PM → Cost Team → PGM</code></td>
+<td>Names the two routes requested for the diagram.</td>
+<td>The instruction is a process description for discussion, not an authenticated SAP/PGM routing policy or proof each gate is mandatory for every quote.</td>
+</tr>
+<tr>
+<td>U2</td>
+<td>User's 2026-09-24 clarification: all five assigned vendors already work with Supermicro and SDS is already being quoted</td>
+<td>Sets the commercial starting point and the presentation's problem statement: increase Sales participation in selling existing SDS offers.</td>
+<td>User-provided operating context; it does not establish the cause of low Sales participation, actual commission or quota policy, or each offer's current price and configuration.</td>
+</tr>
+</tbody>
+</table>
+<h2>Proposal label</h2>
+<p><code>P1</code> identifies this package's proposed sales-led pilot. Targets, owners, gates and expected effects under <code>P1</code> are <strong>plans</strong>, not observed outcomes. A <strong>new reusable configuration card</strong> needs approval for its scope, price, support, procurement, compliance and attribution before a rep uses that card. Existing approved SDS quote routes continue under their current controls.[U2]</p></body></html>
