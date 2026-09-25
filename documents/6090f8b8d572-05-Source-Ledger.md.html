@@ -165,25 +165,25 @@
 <tbody>
 <tr>
 <td>L1</td>
-<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>program_matrix</code> and <code>vendors.DDN.product_split</code></td>
+<td><a href="7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>program_matrix</code> and <code>vendors.DDN.product_split</code></td>
 <td>Cabinet SO counts: DDN 8, Hammerspace 3, Cloudian 0, OSNEXUS 63, SteelDome 0; DDN 6 deduplicated deals, 4 appliance and 2 Infinia.</td>
 <td>Historical, partial cabinet; count is SOs, not vendor revenue, quota performance or win rate.</td>
 </tr>
 <tr>
 <td>L2</td>
-<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>friction</code>; <a href="../documents/a0bb4a818d2b-email_evidence.json">analysis/email_evidence.json</a></td>
+<td><a href="7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>friction</code>; <a href="a0bb4a818d2b-email_evidence.json">analysis/email_evidence.json</a></td>
 <td>50 of 388 SOs flagged reissue; keyword mentions: end-customer 199, CQ 20, BQ 12, IBOM 18.</td>
 <td>Email hits overlap; they are traces, not required steps or measured delay/PM hours.</td>
 </tr>
 <tr>
 <td>L3</td>
-<td><a href="0d547950c583-Weekly-Report-09182026.xlsx">Weekly Report-09182026.xlsx</a>, <code>2026 Goal</code> rows 1–6; <a href="../documents/29be6537a8ae-regression_results.json">regression_results.json</a>, <code>goal_2025</code> and <code>regularity</code></td>
+<td><a href="0d547950c583-Weekly-Report-09182026.xlsx">Weekly Report-09182026.xlsx</a>, <code>2026 Goal</code> rows 1–6; <a href="29be6537a8ae-regression_results.json">regression_results.json</a>, <code>goal_2025</code> and <code>regularity</code></td>
 <td>Goal sheet labels Solution Team, SW Validation and Tech Support, Solution Owner; no separately labeled sales attach owner. 2025 Cloudian shares a goal column with Quantum.</td>
 <td>Missing field does not prove commission policy or accountability in other systems. Two weekly reports are rolling versions and must not be added.</td>
 </tr>
 <tr>
 <td>L4</td>
-<td><a href="../documents/fdf42c38d5ba-00---Vendor-.md">00-導讀-Vendor銷售診斷.md</a> §§1,6,8; <a href="../documents/a96453549a31-quotes_columns.json">analysis/inputs/quotes_columns.json</a></td>
+<td><a href="fdf42c38d5ba-00---Vendor-.md">00-導讀-Vendor銷售診斷.md</a> §§1,6,8; <a href="a96453549a31-quotes_columns.json">analysis/inputs/quotes_columns.json</a></td>
 <td>Full eligible opportunity and ERP <code>86</code> quote populations, lost/never-quoted cases, customer-request and quote stage timestamps, cost and PM time missing from current archive.</td>
 <td>Cannot estimate opportunity→SO or quote→SO conversion, end-to-end transaction time, whole-deal margin or PM workload.</td>
 </tr>
@@ -195,15 +195,21 @@
 </tr>
 <tr>
 <td>L6</td>
-<td><a href="../documents/e3a9d7b8f7c6-00----Claude.md">00-週五面試主線-給Claude.md</a> §§panel, 90-day plan</td>
+<td><a href="e3a9d7b8f7c6-00----Claude.md">00-週五面試主線-給Claude.md</a> §§panel, 90-day plan</td>
 <td>Panel's five assigned vendors and original interview narrative.</td>
 <td>Older notes saying SteelDome solution page has no models are superseded by its current Supermicro page and 2026 joint brief.[T1][T2]</td>
 </tr>
 <tr>
 <td>L7</td>
-<td><a href="../documents/7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>salesperson_concentration</code>, <code>salespersons[*].so_count</code>; <a href="../documents/4d9f6b43fabb-stats.py">analysis/stats.py</a>, <code>salesperson_stats</code></td>
+<td><a href="7347d2c732c7-vendor_stats.json">analysis/vendor_stats.json</a>, <code>salesperson_concentration</code>, <code>salespersons[*].so_count</code>; <a href="4d9f6b43fabb-stats.py">analysis/stats.py</a>, <code>salesperson_stats</code></td>
 <td>Among 315 SOs with salesperson tags and 134 people, the five highest by total-order value account for about 43% of the <strong>recorded</strong> total-order dollars assigned to tagged reps.</td>
 <td>Some tagged SOs lack value; this measures historical recorded order-value concentration, not CRM account ownership, monopoly, access to PM, commission rules or cause. Top five by SO count and by dollars need not be the same people.</td>
+</tr>
+<tr>
+<td>L8</td>
+<td>web/index.html <code>#sds-subscription-basis</code> JSON (11 records) derived from <a href="12fd406f4f4e-deal_ledger.json">analysis/deal_ledger.json</a></td>
+<td>11 priced SDS subscription orders in the local archive (9 WEKA, 1 Hammerspace, 1 Quantum), each normalized to a 12-month equivalent; Bayesian-bootstrap median $114,796 → $115,000 working fee.</td>
+<td>Archive sample, mostly WEKA; a planning input for the illustrative bookings scenario, not a vendor quote or fair-market price.</td>
 </tr>
 <tr>
 <td>U1</td>
@@ -216,6 +222,18 @@
 <td>User's 2026-09-24 clarification: all five assigned vendors already work with Supermicro and SDS is already being quoted</td>
 <td>Sets the commercial starting point and the presentation's problem statement: increase Sales participation in selling existing SDS offers.</td>
 <td>User-provided operating context; it does not establish the cause of low Sales participation, actual commission or quota policy, or each offer's current price and configuration.</td>
+</tr>
+<tr>
+<td>U3</td>
+<td>User's 2026-09-25 field note: Cloudian and OSNEXUS deployments are mostly warm and can also serve cold; relative price positioning DDN highest, OSNEXUS lowest, Hammerspace / Cloudian / SteelDome similar</td>
+<td>Adds field placement and a relative price order to the tier scene and the panel Q&amp;A.</td>
+<td>User-supplied field observation, not a published tiering or a price list; no dollar values; each quote's configuration, price and support must be confirmed per opportunity.</td>
+</tr>
+<tr>
+<td>U4</td>
+<td>User's 2026-09-24 statement: about 700+ Sales reps company-wide today</td>
+<td>Denominator context on the sales-evidence scene; the archive names only 84 reps.</td>
+<td>User-stated headcount, not an HR record; the archive counts (236 dated SO, 187 named, 84 names, 58 records, 7 repeat sellers) are this storage archive only, not company-wide coverage.</td>
 </tr>
 </tbody>
 </table>
