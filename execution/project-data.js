@@ -153,8 +153,8 @@ window.PGM_PROJECTS = [
       en: "A deterministic workload-to-platform view spanning 14 workloads, 9 platform groups, and 16 decision gates.",
       zh: "以 deterministic mapping 對齊 14 種 workload、9 個 platform groups 與 16 個 decision gates。"
     },
-    url: "file:///Volumes/ClaudeNVME/smc/smc-dataset-runner/deliverable-working-copy/smc_workload_fit.html",
-    action: { en: "Open local HTML", zh: "打開本機 HTML" }
+    url: "",
+    action: { en: "Local working artifact", zh: "本機工作成果" }
   },
   {
     title: "ConfiguraTUO P7 Workbench",
@@ -177,8 +177,8 @@ window.PGM_PROJECTS = [
       en: "Three systems, eight bundles, 91 BOM rows, and 10,440 combinations turn BOM completeness and 23 visible part-number gaps into sourcing and QO-readiness decisions; pricing requires revalidation.",
       zh: "以 3 套系統、8 個 bundles、91 筆 BOM rows 與 10,440 種組合，把 BOM 完整度及 23 個可見 part-number gaps 轉成 sourcing 與 QO-readiness 決策；價格需重新確認。"
     },
-    url: "file:///Volumes/ClaudeNVME/moomoo/super_sales_exports/price_check/h200_bom_comparison_20260715/ConfiguraTUO_H200_EXACT_BUNDLE_MATRIX_20260715.html",
-    action: { en: "Open local HTML", zh: "打開本機 HTML" }
+    url: "",
+    action: { en: "Local working artifact", zh: "本機工作成果" }
   },
   {
     title: "BTO Parts Readiness & Source Alignment",
@@ -237,8 +237,8 @@ window.PGM_PROJECTS = [
       en: "An internal approval-process knowledge base and P0→P7 workflow abstraction; case emails and individual approvals are excluded.",
       zh: "內部 approval-process knowledge base 與 P0→P7 workflow abstraction；個案 email 與個別 approvals 不納入展示。"
     },
-    url: "file:///Volumes/ClaudeNVME/GTC%20Doc/doc-gtc-knowledge-base.html",
-    action: { en: "Open local HTML", zh: "打開本機 HTML" }
+    url: "",
+    action: { en: "Local working artifact", zh: "本機工作成果" }
   },
   {
     title: "SMCI Predictive-Maintenance Prototype",
