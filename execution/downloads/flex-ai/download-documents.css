@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Portfolio CJK";
-  src: url("file:///Library/Fonts/Arial%20Unicode.ttf") format("truetype");
+  src: local("Arial Unicode MS");
   font-style: normal;
   font-weight: 400;
 }
